@@ -126,7 +126,7 @@ if (typeof document !== 'undefined') {
       el('room').value = comparison.room;
       fillViews(); el('view').value = comparison.view;
       fillSelect(el('period'), resort.periods.map(period => [period.id, period.label])); el('period').value = comparison.period;
-      el('chart-source').href = resort.source;
+      updateSourceLink(resort);
     } else {
       for (const id of ['room', 'view', 'period']) fillSelect(el(id), [['', 'Select a resort']]);
       el('chart-source').removeAttribute('href');
@@ -458,6 +458,11 @@ if (typeof document !== 'undefined') {
     renderResults();
   });
   const pointData = window.DVC_POINTS;
+  function updateSourceLink(resort) {
+    const year = firstDate()?.getUTCFullYear() || 2027;
+    el('chart-source').href = resort.sources?.[year]?.url || resort.source;
+    el('chart-source').textContent = `Official ${resort.sources?.[year] ? year : 2027} chart ↗`;
+  }
   function selectedResort() { return pointData?.resorts.find(resort => resort.id === el('resort').value); }
   function fillSelect(select, entries) {
     select.replaceChildren(...entries.map(([value, label]) => new Option(label, value)));
@@ -472,6 +477,7 @@ if (typeof document !== 'undefined') {
     if (!period || index < 0) return;
     weekday = period.rates[index].weekday; weekend = period.rates[index].weekend;
     el('weekday').value = weekday; el('weekend').value = weekend;
+    updateSourceLink(resort);
     el('preset-status').textContent = `Chart rates: ${weekday} Sun–Thu / ${weekend} Fri–Sat points per night.${weekday === weekend ? ' Same rate every night.' : ''}`;
     renderGrid();
   }
@@ -507,7 +513,7 @@ if (typeof document !== 'undefined') {
     if (Array.from(el('room').options).some(option => option.value === previousRoom)) el('room').value = previousRoom;
     fillViews();
     fillSelect(el('period'), resort.periods.map(period => [period.id, period.label]));
-    el('chart-source').href = resort.source;
+    updateSourceLink(resort);
     applyPreset();
   });
   el('room').addEventListener('change', () => { fillViews(); applyPreset(); });
@@ -519,6 +525,10 @@ if (typeof document !== 'undefined') {
   el('more-days').addEventListener('click', () => { requestedRows = Math.min(count, visibleDayCount() + 7); updateVisibleRows(); });
   el('trim-days').addEventListener('click', () => { requestedRows = 0; updateVisibleRows(); });
   window.addEventListener('resize', updateVisibleRows);
+  const today = new Date();
+  const localToday = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  const coverageStart = pointData?.startDate || '2027-01-01';
+  el('earliest-checkin').min = localToday > coverageStart ? localToday : coverageStart;
   const mobilePanels = window.matchMedia('(max-width:700px)');
   function syncDisclosures() {
     el('resort-disclosure').open = true;

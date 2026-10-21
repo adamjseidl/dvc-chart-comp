@@ -1,0 +1,2847 @@
+{
+  "year": 2026,
+  "startDate": "2026-10-20",
+  "endDate": "2026-12-31",
+  "retrieved": "2026-10-20",
+  "resorts": [
+    {
+      "id": "AULV",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2026-AULV-Updated-2-11-26.pdf",
+      "sourceSha256": "ebbf606ba7ca737882101961a120119dbc21961df7d2e63663016c25543c6fd5",
+      "periods": [
+        {
+          "id": "2026-1",
+          "label": "2026 · Nov 10 – Nov 23; Nov 29 – Dec 17",
+          "ranges": [
+            {
+              "start": "2026-11-10",
+              "end": "2026-11-23"
+            },
+            {
+              "start": "2026-11-29",
+              "end": "2026-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 16
+            },
+            {
+              "weekday": 17,
+              "weekend": 17
+            },
+            {
+              "weekday": 19,
+              "weekend": 19
+            },
+            {
+              "weekday": 23,
+              "weekend": 23
+            },
+            {
+              "weekday": 25,
+              "weekend": 25
+            },
+            {
+              "weekday": 34,
+              "weekend": 34
+            },
+            {
+              "weekday": 35,
+              "weekend": 35
+            },
+            {
+              "weekday": 44,
+              "weekend": 44
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 47,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 49
+            },
+            {
+              "weekday": 59,
+              "weekend": 59
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 95,
+              "weekend": 95
+            },
+            {
+              "weekday": 122,
+              "weekend": 122
+            }
+          ]
+        },
+        {
+          "id": "2026-2",
+          "label": "2026 · Oct 20 – Nov 9",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-09"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 17
+            },
+            {
+              "weekday": 19,
+              "weekend": 19
+            },
+            {
+              "weekday": 21,
+              "weekend": 21
+            },
+            {
+              "weekday": 24,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 26
+            },
+            {
+              "weekday": 37,
+              "weekend": 37
+            },
+            {
+              "weekday": 44,
+              "weekend": 44
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 50,
+              "weekend": 50
+            },
+            {
+              "weekday": 51,
+              "weekend": 51
+            },
+            {
+              "weekday": 59,
+              "weekend": 59
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 69,
+              "weekend": 69
+            },
+            {
+              "weekday": 103,
+              "weekend": 103
+            },
+            {
+              "weekday": 134,
+              "weekend": 134
+            }
+          ]
+        },
+        {
+          "id": "2026-4",
+          "label": "2026 · Nov 24 – Nov 28; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-11-24",
+              "end": "2026-11-28"
+            },
+            {
+              "start": "2026-12-18",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 21
+            },
+            {
+              "weekday": 24,
+              "weekend": 24
+            },
+            {
+              "weekday": 27,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 29
+            },
+            {
+              "weekday": 31,
+              "weekend": 31
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 50,
+              "weekend": 50
+            },
+            {
+              "weekday": 58,
+              "weekend": 58
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 64,
+              "weekend": 64
+            },
+            {
+              "weekday": 71,
+              "weekend": 71
+            },
+            {
+              "weekday": 79,
+              "weekend": 79
+            },
+            {
+              "weekday": 84,
+              "weekend": 84
+            },
+            {
+              "weekday": 140,
+              "weekend": 140
+            },
+            {
+              "weekday": 184,
+              "weekend": 184
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BLT",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/2026-BLT.pdf",
+      "sourceSha256": "d3573799ba716c567dd7892874aec7b56d38308822b05537e3f58b6eec5fda21",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 30,
+              "weekend": 38
+            },
+            {
+              "weekday": 35,
+              "weekend": 41
+            },
+            {
+              "weekday": 41,
+              "weekend": 50
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 46,
+              "weekend": 54
+            },
+            {
+              "weekday": 57,
+              "weekend": 66
+            },
+            {
+              "weekday": 96,
+              "weekend": 112
+            },
+            {
+              "weekday": 115,
+              "weekend": 135
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 33,
+              "weekend": 41
+            },
+            {
+              "weekday": 38,
+              "weekend": 47
+            },
+            {
+              "weekday": 47,
+              "weekend": 56
+            },
+            {
+              "weekday": 45,
+              "weekend": 53
+            },
+            {
+              "weekday": 50,
+              "weekend": 61
+            },
+            {
+              "weekday": 60,
+              "weekend": 72
+            },
+            {
+              "weekday": 108,
+              "weekend": 126
+            },
+            {
+              "weekday": 131,
+              "weekend": 153
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 50,
+              "weekend": 57
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 65,
+              "weekend": 76
+            },
+            {
+              "weekday": 120,
+              "weekend": 140
+            },
+            {
+              "weekday": 143,
+              "weekend": 168
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 38
+            },
+            {
+              "weekday": 48,
+              "weekend": 56
+            },
+            {
+              "weekday": 53,
+              "weekend": 62
+            },
+            {
+              "weekday": 64,
+              "weekend": 75
+            },
+            {
+              "weekday": 66,
+              "weekend": 77
+            },
+            {
+              "weekday": 72,
+              "weekend": 84
+            },
+            {
+              "weekday": 88,
+              "weekend": 98
+            },
+            {
+              "weekday": 146,
+              "weekend": 171
+            },
+            {
+              "weekday": 176,
+              "weekend": 207
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VWL-BRV",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/VWL-BRV-2026.pdf",
+      "sourceSha256": "a1d3188fd078817ab901bb1ed4e0f2eb89dadfdffcc098bc84a3d4b7ee59d8fb",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 46,
+              "weekend": 51
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 21
+            },
+            {
+              "weekday": 37,
+              "weekend": 42
+            },
+            {
+              "weekday": 49,
+              "weekend": 54
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 26,
+              "weekend": 28
+            },
+            {
+              "weekday": 47,
+              "weekend": 55
+            },
+            {
+              "weekday": 64,
+              "weekend": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CFW",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/CFW-2026.pdf",
+      "sourceSha256": "d6159cbc3acf8fd4c8e0fcdef69936475e90637d5c31b243ae4857171744a281",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 28
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 32,
+              "weekend": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCC-CCVC",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/WCC-CCVC-2026.pdf",
+      "sourceSha256": "98606f9fe37450cf025dd84113186cb1837d123de30b2c6d9ba51aadb6cbf946",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 33,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 108,
+              "weekend": 124
+            },
+            {
+              "weekday": 101,
+              "weekend": 117
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 35,
+              "weekend": 42
+            },
+            {
+              "weekday": 45,
+              "weekend": 52
+            },
+            {
+              "weekday": 120,
+              "weekend": 137
+            },
+            {
+              "weekday": 113,
+              "weekend": 131
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 37,
+              "weekend": 43
+            },
+            {
+              "weekday": 50,
+              "weekend": 56
+            },
+            {
+              "weekday": 128,
+              "weekend": 147
+            },
+            {
+              "weekday": 124,
+              "weekend": 143
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 48,
+              "weekend": 54
+            },
+            {
+              "weekday": 64,
+              "weekend": 72
+            },
+            {
+              "weekday": 176,
+              "weekend": 206
+            },
+            {
+              "weekday": 171,
+              "weekend": 196
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AKV_AKV2",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/AKV-AKV2-2026.pdf",
+      "sourceSha256": "a3ee5b8c4d1cf70e7dba189545e3c6211e24f764496722375b618c23617d2873",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 8,
+              "weekend": 12
+            },
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 20,
+              "weekend": 22
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 33,
+              "weekend": 35
+            },
+            {
+              "weekday": 43,
+              "weekend": 49
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 32,
+              "weekend": 39
+            },
+            {
+              "weekday": 42,
+              "weekend": 50
+            },
+            {
+              "weekday": 58,
+              "weekend": 66
+            },
+            {
+              "weekday": 78,
+              "weekend": 88
+            },
+            {
+              "weekday": 86,
+              "weekend": 96
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 19,
+              "weekend": 20
+            },
+            {
+              "weekday": 23,
+              "weekend": 25
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 29,
+              "weekend": 32
+            },
+            {
+              "weekday": 35,
+              "weekend": 39
+            },
+            {
+              "weekday": 46,
+              "weekend": 53
+            },
+            {
+              "weekday": 30,
+              "weekend": 35
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 57
+            },
+            {
+              "weekday": 61,
+              "weekend": 71
+            },
+            {
+              "weekday": 88,
+              "weekend": 100
+            },
+            {
+              "weekday": 96,
+              "weekend": 110
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 12,
+              "weekend": 14
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 32,
+              "weekend": 35
+            },
+            {
+              "weekday": 38,
+              "weekend": 41
+            },
+            {
+              "weekday": 49,
+              "weekend": 56
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 40,
+              "weekend": 48
+            },
+            {
+              "weekday": 52,
+              "weekend": 61
+            },
+            {
+              "weekday": 66,
+              "weekend": 77
+            },
+            {
+              "weekday": 97,
+              "weekend": 111
+            },
+            {
+              "weekday": 107,
+              "weekend": 121
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 21,
+              "weekend": 23
+            },
+            {
+              "weekday": 27,
+              "weekend": 29
+            },
+            {
+              "weekday": 33,
+              "weekend": 36
+            },
+            {
+              "weekday": 31,
+              "weekend": 35
+            },
+            {
+              "weekday": 38,
+              "weekend": 45
+            },
+            {
+              "weekday": 47,
+              "weekend": 52
+            },
+            {
+              "weekday": 65,
+              "weekend": 73
+            },
+            {
+              "weekday": 43,
+              "weekend": 48
+            },
+            {
+              "weekday": 55,
+              "weekend": 60
+            },
+            {
+              "weekday": 70,
+              "weekend": 76
+            },
+            {
+              "weekday": 88,
+              "weekend": 98
+            },
+            {
+              "weekday": 117,
+              "weekend": 135
+            },
+            {
+              "weekday": 127,
+              "weekend": 144
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BCV",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/BCV-2026.pdf",
+      "sourceSha256": "452e0617226b7a531c951f9ac37208b75933c3cfcb9db050dc494ffe4cf21ae4",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 46
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 36,
+              "weekend": 39
+            },
+            {
+              "weekday": 46,
+              "weekend": 52
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 22
+            },
+            {
+              "weekday": 37,
+              "weekend": 42
+            },
+            {
+              "weekday": 48,
+              "weekend": 55
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 27,
+              "weekend": 28
+            },
+            {
+              "weekday": 51,
+              "weekend": 56
+            },
+            {
+              "weekday": 68,
+              "weekend": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BWALK",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/BWALK-2026.pdf",
+      "sourceSha256": "77878c9a0a32fe01d13c24130a8ab9f156fc54d2cb50da42defb066f36acd961",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 11,
+              "weekend": 15
+            },
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 24,
+              "weekend": 30
+            },
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 31,
+              "weekend": 41
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 88,
+              "weekend": 97
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 28,
+              "weekend": 33
+            },
+            {
+              "weekday": 35,
+              "weekend": 41
+            },
+            {
+              "weekday": 39,
+              "weekend": 45
+            },
+            {
+              "weekday": 45,
+              "weekend": 51
+            },
+            {
+              "weekday": 101,
+              "weekend": 114
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 39,
+              "weekend": 43
+            },
+            {
+              "weekday": 43,
+              "weekend": 49
+            },
+            {
+              "weekday": 51,
+              "weekend": 55
+            },
+            {
+              "weekday": 110,
+              "weekend": 124
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 28,
+              "weekend": 29
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 50,
+              "weekend": 56
+            },
+            {
+              "weekday": 60,
+              "weekend": 67
+            },
+            {
+              "weekday": 68,
+              "weekend": 77
+            },
+            {
+              "weekday": 133,
+              "weekend": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HH",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/HH-2026.pdf",
+      "sourceSha256": "0704decfc050b5a12104f5d438df238aa0ca233b6e48e60d8d6f553b1adbe6cc",
+      "periods": [
+        {
+          "id": "2026-1",
+          "label": "2026 · Dec 1 – Dec 17",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 6,
+              "weekend": 12
+            },
+            {
+              "weekday": 14,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 27,
+              "weekend": 39
+            }
+          ]
+        },
+        {
+          "id": "2026-2",
+          "label": "2026 · Nov 1 – Nov 30; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-11-01",
+              "end": "2026-11-30"
+            },
+            {
+              "start": "2026-12-18",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 15
+            },
+            {
+              "weekday": 20,
+              "weekend": 29
+            },
+            {
+              "weekday": 24,
+              "weekend": 36
+            },
+            {
+              "weekday": 47,
+              "weekend": 60
+            }
+          ]
+        },
+        {
+          "id": "2026-3",
+          "label": "2026 · Oct 20 – Oct 31",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-10-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 23
+            },
+            {
+              "weekday": 27,
+              "weekend": 44
+            },
+            {
+              "weekday": 33,
+              "weekend": 56
+            },
+            {
+              "weekday": 59,
+              "weekend": 95
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLUB-OKW",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/CLUB-OKW-2026.pdf",
+      "sourceSha256": "b5db2998b0425b23bf229a1bdae9f15feb0db992716169db9a21ede742de45b1",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 15
+            },
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 34,
+              "weekend": 38
+            },
+            {
+              "weekday": 53,
+              "weekend": 64
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 17
+            },
+            {
+              "weekday": 28,
+              "weekend": 34
+            },
+            {
+              "weekday": 39,
+              "weekend": 44
+            },
+            {
+              "weekday": 59,
+              "weekend": 71
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 42,
+              "weekend": 49
+            },
+            {
+              "weekday": 66,
+              "weekend": 79
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 40,
+              "weekend": 50
+            },
+            {
+              "weekday": 57,
+              "weekend": 65
+            },
+            {
+              "weekday": 82,
+              "weekend": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "POLYV",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/POLYV-2026.pdf",
+      "sourceSha256": "6294f3daa3a903ab0a0cad7a380bb84256813b51441418ba76fd1e88667b7df4",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 128,
+              "weekend": 147
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 21
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 52
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 62,
+              "weekend": 73
+            },
+            {
+              "weekday": 76,
+              "weekend": 90
+            },
+            {
+              "weekday": 102,
+              "weekend": 119
+            },
+            {
+              "weekday": 122,
+              "weekend": 144
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 150,
+              "weekend": 172
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 44,
+              "weekend": 50
+            },
+            {
+              "weekday": 53,
+              "weekend": 60
+            },
+            {
+              "weekday": 58,
+              "weekend": 67
+            },
+            {
+              "weekday": 62,
+              "weekend": 70
+            },
+            {
+              "weekday": 73,
+              "weekend": 84
+            },
+            {
+              "weekday": 90,
+              "weekend": 101
+            },
+            {
+              "weekday": 115,
+              "weekend": 132
+            },
+            {
+              "weekday": 140,
+              "weekend": 162
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 162,
+              "weekend": 185
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 48,
+              "weekend": 56
+            },
+            {
+              "weekday": 54,
+              "weekend": 64
+            },
+            {
+              "weekday": 65,
+              "weekend": 75
+            },
+            {
+              "weekday": 68,
+              "weekend": 79
+            },
+            {
+              "weekday": 79,
+              "weekend": 90
+            },
+            {
+              "weekday": 96,
+              "weekend": 110
+            },
+            {
+              "weekday": 126,
+              "weekend": 144
+            },
+            {
+              "weekday": 153,
+              "weekend": 179
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 34,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 43
+            },
+            {
+              "weekday": 199,
+              "weekend": 226
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 39,
+              "weekend": 43
+            },
+            {
+              "weekday": 34,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 43
+            },
+            {
+              "weekday": 48,
+              "weekend": 53
+            },
+            {
+              "weekday": 68,
+              "weekend": 78
+            },
+            {
+              "weekday": 78,
+              "weekend": 86
+            },
+            {
+              "weekday": 89,
+              "weekend": 98
+            },
+            {
+              "weekday": 92,
+              "weekend": 105
+            },
+            {
+              "weekday": 109,
+              "weekend": 125
+            },
+            {
+              "weekday": 128,
+              "weekend": 149
+            },
+            {
+              "weekday": 178,
+              "weekend": 198
+            },
+            {
+              "weekday": 197,
+              "weekend": 226
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RVA",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/RIV-2026.pdf",
+      "sourceSha256": "6143342f14d3a02ba96b1e34c80307adf3278b6ad8684b9341a9966fc0c87f12",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 26
+            },
+            {
+              "weekday": 35,
+              "weekend": 42
+            },
+            {
+              "weekday": 44,
+              "weekend": 54
+            },
+            {
+              "weekday": 47,
+              "weekend": 53
+            },
+            {
+              "weekday": 55,
+              "weekend": 67
+            },
+            {
+              "weekday": 116,
+              "weekend": 135
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 24,
+              "weekend": 28
+            },
+            {
+              "weekday": 39,
+              "weekend": 50
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 52,
+              "weekend": 63
+            },
+            {
+              "weekday": 65,
+              "weekend": 74
+            },
+            {
+              "weekday": 129,
+              "weekend": 154
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 43,
+              "weekend": 53
+            },
+            {
+              "weekday": 53,
+              "weekend": 63
+            },
+            {
+              "weekday": 56,
+              "weekend": 65
+            },
+            {
+              "weekday": 71,
+              "weekend": 79
+            },
+            {
+              "weekday": 140,
+              "weekend": 166
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 32
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 58,
+              "weekend": 68
+            },
+            {
+              "weekday": 68,
+              "weekend": 81
+            },
+            {
+              "weekday": 77,
+              "weekend": 90
+            },
+            {
+              "weekday": 88,
+              "weekend": 103
+            },
+            {
+              "weekday": 172,
+              "weekend": 204
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SSR",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/SSR-2026.pdf",
+      "sourceSha256": "24f8ed741ce5b21432da57bdc084ba52ed28a5d30b509c59f9e340c198e627c7",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 30,
+              "weekend": 35
+            },
+            {
+              "weekday": 35,
+              "weekend": 39
+            },
+            {
+              "weekday": 39,
+              "weekend": 45
+            },
+            {
+              "weekday": 74,
+              "weekend": 83
+            },
+            {
+              "weekday": 82,
+              "weekend": 94
+            },
+            {
+              "weekday": 43,
+              "weekend": 48
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 30,
+              "weekend": 34
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 37,
+              "weekend": 45
+            },
+            {
+              "weekday": 46,
+              "weekend": 54
+            },
+            {
+              "weekday": 86,
+              "weekend": 97
+            },
+            {
+              "weekday": 98,
+              "weekend": 112
+            },
+            {
+              "weekday": 47,
+              "weekend": 52
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 38,
+              "weekend": 42
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 93,
+              "weekend": 107
+            },
+            {
+              "weekday": 108,
+              "weekend": 125
+            },
+            {
+              "weekday": 51,
+              "weekend": 58
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 23,
+              "weekend": 28
+            },
+            {
+              "weekday": 43,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 53
+            },
+            {
+              "weekday": 56,
+              "weekend": 63
+            },
+            {
+              "weekday": 67,
+              "weekend": 75
+            },
+            {
+              "weekday": 113,
+              "weekend": 127
+            },
+            {
+              "weekday": 131,
+              "weekend": 139
+            },
+            {
+              "weekday": 66,
+              "weekend": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VERO",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/VERO-2026.pdf",
+      "sourceSha256": "c0c44646c903b9c51464673431c1b9fb77b239f8381135c62981185399e99b89",
+      "periods": [
+        {
+          "id": "2026-1",
+          "label": "2026 · Oct 20 – Nov 24",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 16
+            },
+            {
+              "weekday": 12,
+              "weekend": 17
+            },
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 21,
+              "weekend": 29
+            },
+            {
+              "weekday": 30,
+              "weekend": 39
+            },
+            {
+              "weekday": 60,
+              "weekend": 72
+            }
+          ]
+        },
+        {
+          "id": "2026-2",
+          "label": "2026 · Nov 28 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-11-28",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 17
+            },
+            {
+              "weekday": 13,
+              "weekend": 18
+            },
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 24,
+              "weekend": 31
+            },
+            {
+              "weekday": 33,
+              "weekend": 42
+            },
+            {
+              "weekday": 61,
+              "weekend": 74
+            }
+          ]
+        },
+        {
+          "id": "2026-3",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 29,
+              "weekend": 37
+            },
+            {
+              "weekday": 36,
+              "weekend": 47
+            },
+            {
+              "weekday": 73,
+              "weekend": 88
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 27
+            },
+            {
+              "weekday": 23,
+              "weekend": 29
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 43,
+              "weekend": 53
+            },
+            {
+              "weekday": 61,
+              "weekend": 72
+            },
+            {
+              "weekday": 105,
+              "weekend": 126
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GCAL-VGC",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/GCAL-2026.pdf",
+      "sourceSha256": "ba1f8e48a81876252926afde93d4f5a0e9dbdd3bfd90903fee2890586af8c3fa",
+      "periods": [
+        {
+          "id": "2026-2",
+          "label": "2026 · Oct 20 – Nov 23; Nov 29 – Dec 17",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-23"
+            },
+            {
+              "start": "2026-11-29",
+              "end": "2026-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 39,
+              "weekend": 48
+            },
+            {
+              "weekday": 52,
+              "weekend": 65
+            },
+            {
+              "weekday": 106,
+              "weekend": 133
+            }
+          ]
+        },
+        {
+          "id": "2026-4",
+          "label": "2026 · Nov 24 – Nov 28; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-11-24",
+              "end": "2026-11-28"
+            },
+            {
+              "start": "2026-12-18",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 30,
+              "weekend": 37
+            },
+            {
+              "weekday": 62,
+              "weekend": 76
+            },
+            {
+              "weekday": 86,
+              "weekend": 108
+            },
+            {
+              "weekday": 182,
+              "weekend": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VGF",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/VGF-2026.pdf",
+      "sourceSha256": "e978c900ba8e40f087fc9f9d00f435797854949503ab2662a8ce0fad964c3f16",
+      "periods": [
+        {
+          "id": "2026-3",
+          "label": "2026 · Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2026-12-01",
+              "end": "2026-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 21,
+              "weekend": 26
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 21,
+              "weekend": 26
+            },
+            {
+              "weekday": 38,
+              "weekend": 46
+            },
+            {
+              "weekday": 46,
+              "weekend": 55
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 62,
+              "weekend": 74
+            },
+            {
+              "weekday": 126,
+              "weekend": 148
+            }
+          ]
+        },
+        {
+          "id": "2026-5",
+          "label": "2026 · Oct 20 – Nov 24; Nov 28 – Nov 30",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-24"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 43,
+              "weekend": 51
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 61,
+              "weekend": 69
+            },
+            {
+              "weekday": 73,
+              "weekend": 82
+            },
+            {
+              "weekday": 143,
+              "weekend": 169
+            }
+          ]
+        },
+        {
+          "id": "2026-6",
+          "label": "2026 · Nov 25 – Nov 27",
+          "ranges": [
+            {
+              "start": "2026-11-25",
+              "end": "2026-11-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 41
+            },
+            {
+              "weekday": 24,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 46,
+              "weekend": 55
+            },
+            {
+              "weekday": 55,
+              "weekend": 66
+            },
+            {
+              "weekday": 65,
+              "weekend": 75
+            },
+            {
+              "weekday": 75,
+              "weekend": 88
+            },
+            {
+              "weekday": 161,
+              "weekend": 187
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-12-24",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 54
+            },
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 64,
+              "weekend": 75
+            },
+            {
+              "weekday": 76,
+              "weekend": 89
+            },
+            {
+              "weekday": 87,
+              "weekend": 103
+            },
+            {
+              "weekday": 103,
+              "weekend": 122
+            },
+            {
+              "weekday": 197,
+              "weekend": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VDH",
+      "source": "https://documents.disneyvacationclub.com/media/dvc/catalog/resorts/dvc-resorts/VDH-2026.pdf",
+      "sourceSha256": "c6dcfa4801326f74d86d0b7f96c214a2815c948ca560d174ad527895ce0709bc",
+      "periods": [
+        {
+          "id": "2026-4",
+          "label": "2026 · Oct 20 – Nov 23; Nov 28 – Dec 17",
+          "ranges": [
+            {
+              "start": "2026-10-20",
+              "end": "2026-11-23"
+            },
+            {
+              "start": "2026-11-28",
+              "end": "2026-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 15,
+              "weekend": 17
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 40,
+              "weekend": 46
+            },
+            {
+              "weekday": 60,
+              "weekend": 69
+            },
+            {
+              "weekday": 129,
+              "weekend": 152
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            }
+          ]
+        },
+        {
+          "id": "2026-7",
+          "label": "2026 · Nov 24 – Nov 27; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2026-11-24",
+              "end": "2026-11-27"
+            },
+            {
+              "start": "2026-12-18",
+              "end": "2026-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 28,
+              "weekend": 31
+            },
+            {
+              "weekday": 31,
+              "weekend": 34
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 82,
+              "weekend": 92
+            },
+            {
+              "weekday": 174,
+              "weekend": 204
+            },
+            {
+              "weekday": 26,
+              "weekend": 30
+            },
+            {
+              "weekday": 37,
+              "weekend": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

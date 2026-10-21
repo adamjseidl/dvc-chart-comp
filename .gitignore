@@ -6,3 +6,4 @@ __pycache__/
 .env
 .env.*
 work/charts/*.txt
+work/charts-2026/*.txt

@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Night points calculator</title><link rel="stylesheet" href="style.css">
+<title>DVC Resort &amp; Stay Planner</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="eyebrow">PLAN YOUR STAY</div><h1>Night points calculator</h1><p>Compare seven starting days. Move a colored line to choose your checkout day.</p></header>
-<details id="resort-disclosure" class="mobile-panel" open><summary>Resort &amp; room <span id="resort-summary">Select Resort</span></summary><section class="resort-panel" aria-labelledby="resort-title"><div class="preset-heading"><h2 id="resort-title">2027 DVC point charts</h2><span>Travel-period presets</span></div>
-<label class="date-picker">Earliest check-in<input id="earliest-checkin" type="date" min="2027-01-01" max="2027-12-31" required><small>Compare this date and the next six arrival dates.</small></label><div class="comparison-tabs" role="tablist" aria-label="Resort selections"></div><div class="preset-selectors">
+<header><div class="eyebrow">PLAN YOUR STAY</div><h1>DVC Resort &amp; Stay Planner</h1><p>Compare resorts, arrival dates, vacation points, and park days in one place.</p></header>
+<details id="resort-disclosure" class="mobile-panel" open><summary>Resort &amp; room <span id="resort-summary">Select Resort</span></summary><section class="resort-panel" aria-labelledby="resort-title"><div class="preset-heading"><h2 id="resort-title">DVC point charts · 2026–2027</h2><span>Nightly rates by travel date</span></div>
+<label class="date-picker">Earliest check-in<input id="earliest-checkin" type="date" min="2026-10-20" max="2027-12-31" required><small>Compare this date and the next six arrival dates.</small></label><div class="comparison-tabs" role="tablist" aria-label="Resort selections"></div><div class="preset-selectors">
 <label>Resort<select id="resort"><option value="select" disabled selected>Select Resort</option><option value="">Manual Points Entry</option></select></label>
 <label>Room<select id="room" disabled><option>Select a resort</option></select></label>
 <label>View / category<select id="view" disabled><option>Select a resort</option></select></label>
@@ -15,7 +15,7 @@
 </div><div id="manual-points" class="manual-points" hidden><label>Weekday <input id="weekday" type="number" min="0" step="1" placeholder="—" required><small>Sun–Thu · points per night</small></label>
 <label>Weekend <input id="weekend" type="number" min="0" step="1" placeholder="—" required><small>Fri–Sat nights · points per night</small></label>
 </div><div class="preset-footer"><p id="preset-status" role="status">Select a resort or choose Manual Points Entry.</p><a id="chart-source" target="_blank" rel="noopener" hidden>Official 2027 chart ↗</a></div>
-<p id="date-rate-note" class="preset-note" hidden>With an earliest check-in date, each night uses its actual 2027 travel-period rate. 2028 nights use estimated rates from the matching month/day in the 2027 chart, using the actual night’s weekday/weekend classification. February 29 uses February 28. A ~ marks estimated nights and totals. Manual rates stay fixed.</p><p class="preset-note">2027 chart rates are loaded locally. Point charts describe costs, not room availability. Aulani and Disneyland Hotel also have separate cash accommodation taxes.</p>
+<p id="date-rate-note" class="preset-note" hidden>With an earliest check-in date, each night uses its actual 2026 or 2027 travel-period rate. 2028 nights use estimated rates from the matching month/day in the 2027 chart, using the actual night’s weekday/weekend classification. February 29 uses February 28. A ~ marks estimated nights and totals. Manual rates stay fixed.</p><p class="preset-note">Official rates from October 20, 2026 through December 31, 2027 are loaded locally. Point charts describe costs, not room availability. Aulani and Disneyland Hotel also have separate cash accommodation taxes.</p>
 <p id="category-note" class="preset-note" hidden>Animal Kingdom’s chart covers Jambo House and Kidani Village together. Value and Kilimanjaro Club categories are at Jambo House; check the official chart and resort details for your building and room category.</p>
 </section></details>
 
@@ -34,5 +34,7 @@
 </details><p id="rule-status" class="sr-only" role="status"></p></section><div id="results"></div></aside>
 <section class="calendar"><div class="table-title"><h2>Choose your checkout</h2><button id="add" type="button">+ Add checkout line</button></div><div class="comparison-tabs" role="tablist" aria-label="Resort table tabs"></div><div class="legend" aria-label="Day colors"><span style="--swatch:#f1f5ed">Sat / Sun weekend days</span><span style="--swatch:#dceee7">✈ Arrival / departure</span><span style="--swatch:#e9e2f5">Rest day</span><span style="--swatch:#fff0ae">★ Saturday rest</span><span style="--swatch:#dfedff">◆ Sunday rest</span><span class="estimate-legend">~ Estimated 2028 points</span></div><div class="scroll"><div id="grid-wrap"><table id="grid"><caption class="sr-only">Daily points for each possible starting weekday</caption><thead></thead><tbody></tbody></table><div id="lines"></div></div></div><div id="extra-days-controls" class="extra-days-controls" hidden><span id="visible-days-status" role="status"></span><button id="more-days" type="button">Show 7 more days</button><button id="trim-days" type="button" hidden>Hide extra days</button></div><p class="hint">Day 1 is arrival. The row immediately above the line is checkout; its points are excluded. Day 10 checkout counts 9 nights. Column headings show actual arrival dates. With travel excluded, every other day rests on days 3, 5, 7… . Counting travel as park days shifts rests earlier to days 2, 4, 6… . Rest days still count toward night points. Checkout shading marks each colored line’s checkout row. Use arrow keys on a focused line to move it.</p></section></main>
 <script src="points-2027.js"></script>
+<script src="points-2026.js"></script>
+<script src="points-data.js"></script>
 <script src="app.js"></script>
 </body></html>
