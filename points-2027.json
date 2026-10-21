@@ -1,0 +1,5781 @@
+{
+  "year": 2027,
+  "sourceIndex": "https://disneyvacationclub.disney.go.com/vacation-planning/points-charts",
+  "retrieved": "2026-10-20",
+  "resorts": [
+    {
+      "id": "AULV",
+      "name": "Aulani, Ko Olina, Hawaiʻi",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027-AULV-Updated-2-11-26.pdf",
+      "sourceSha256": "cfe229d3383654d208393fb9929524eb05bad5d27930eb18ffb448e7d3c8dc08",
+      "categories": [
+        {
+          "room": "Hotel Room",
+          "view": "Standard View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Standard View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Island Gardens View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Poolside Gardens View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Ocean View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Standard View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Island Gardens View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Poolside Gardens View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Ocean View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Standard View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Island Gardens View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Poolside Gardens View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Ocean View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Standard View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Ocean View"
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Jan 3 – Feb 27; Sep 5 – Oct 9; Nov 10 – Nov 22; Nov 28 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-01-03",
+              "end": "2027-02-27"
+            },
+            {
+              "start": "2027-09-05",
+              "end": "2027-10-09"
+            },
+            {
+              "start": "2027-11-10",
+              "end": "2027-11-22"
+            },
+            {
+              "start": "2027-11-28",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 16
+            },
+            {
+              "weekday": 17,
+              "weekend": 17
+            },
+            {
+              "weekday": 19,
+              "weekend": 19
+            },
+            {
+              "weekday": 23,
+              "weekend": 23
+            },
+            {
+              "weekday": 25,
+              "weekend": 25
+            },
+            {
+              "weekday": 34,
+              "weekend": 34
+            },
+            {
+              "weekday": 35,
+              "weekend": 35
+            },
+            {
+              "weekday": 44,
+              "weekend": 44
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 47,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 49
+            },
+            {
+              "weekday": 59,
+              "weekend": 59
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 95,
+              "weekend": 95
+            },
+            {
+              "weekday": 122,
+              "weekend": 122
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Apr 4 – Apr 28; May 6 – Jun 27; Oct 10 – Nov 9",
+          "ranges": [
+            {
+              "start": "2027-04-04",
+              "end": "2027-04-28"
+            },
+            {
+              "start": "2027-05-06",
+              "end": "2027-06-27"
+            },
+            {
+              "start": "2027-10-10",
+              "end": "2027-11-09"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 17
+            },
+            {
+              "weekday": 19,
+              "weekend": 19
+            },
+            {
+              "weekday": 21,
+              "weekend": 21
+            },
+            {
+              "weekday": 24,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 26
+            },
+            {
+              "weekday": 37,
+              "weekend": 37
+            },
+            {
+              "weekday": 44,
+              "weekend": 44
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 50,
+              "weekend": 50
+            },
+            {
+              "weekday": 51,
+              "weekend": 51
+            },
+            {
+              "weekday": 59,
+              "weekend": 59
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 69,
+              "weekend": 69
+            },
+            {
+              "weekday": 103,
+              "weekend": 103
+            },
+            {
+              "weekday": 134,
+              "weekend": 134
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Feb 28 – Mar 18; Apr 29 – May 5; Aug 9 – Sep 4",
+          "ranges": [
+            {
+              "start": "2027-02-28",
+              "end": "2027-03-18"
+            },
+            {
+              "start": "2027-04-29",
+              "end": "2027-05-05"
+            },
+            {
+              "start": "2027-08-09",
+              "end": "2027-09-04"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 18
+            },
+            {
+              "weekday": 22,
+              "weekend": 22
+            },
+            {
+              "weekday": 25,
+              "weekend": 25
+            },
+            {
+              "weekday": 26,
+              "weekend": 26
+            },
+            {
+              "weekday": 29,
+              "weekend": 29
+            },
+            {
+              "weekday": 44,
+              "weekend": 44
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 50,
+              "weekend": 50
+            },
+            {
+              "weekday": 58,
+              "weekend": 58
+            },
+            {
+              "weekday": 60,
+              "weekend": 60
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 70,
+              "weekend": 70
+            },
+            {
+              "weekday": 79,
+              "weekend": 79
+            },
+            {
+              "weekday": 121,
+              "weekend": 121
+            },
+            {
+              "weekday": 157,
+              "weekend": 157
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Jan 1 – Jan 2; Mar 19 – Apr 3; Jun 28 – Aug 8; Nov 23 – Nov 27; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-02"
+            },
+            {
+              "start": "2027-03-19",
+              "end": "2027-04-03"
+            },
+            {
+              "start": "2027-06-28",
+              "end": "2027-08-08"
+            },
+            {
+              "start": "2027-11-23",
+              "end": "2027-11-27"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 21
+            },
+            {
+              "weekday": 24,
+              "weekend": 24
+            },
+            {
+              "weekday": 27,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 29
+            },
+            {
+              "weekday": 31,
+              "weekend": 31
+            },
+            {
+              "weekday": 46,
+              "weekend": 46
+            },
+            {
+              "weekday": 50,
+              "weekend": 50
+            },
+            {
+              "weekday": 58,
+              "weekend": 58
+            },
+            {
+              "weekday": 62,
+              "weekend": 62
+            },
+            {
+              "weekday": 64,
+              "weekend": 64
+            },
+            {
+              "weekday": 71,
+              "weekend": 71
+            },
+            {
+              "weekday": 79,
+              "weekend": 79
+            },
+            {
+              "weekday": 84,
+              "weekend": 84
+            },
+            {
+              "weekday": 140,
+              "weekend": 140
+            },
+            {
+              "weekday": 184,
+              "weekend": 184
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BLT",
+      "name": "Bay Lake Tower",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_BLT.pdf",
+      "sourceSha256": "b3bd2f1d140e68f834102b3b642a7264dc9812db96317dd0aaa62786dfa3100d",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Theme Park View"
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 16
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 18,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 32
+            },
+            {
+              "weekday": 29,
+              "weekend": 36
+            },
+            {
+              "weekday": 35,
+              "weekend": 44
+            },
+            {
+              "weekday": 35,
+              "weekend": 42
+            },
+            {
+              "weekday": 38,
+              "weekend": 47
+            },
+            {
+              "weekday": 48,
+              "weekend": 59
+            },
+            {
+              "weekday": 82,
+              "weekend": 98
+            },
+            {
+              "weekday": 101,
+              "weekend": 120
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 17
+            },
+            {
+              "weekday": 18,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 28,
+              "weekend": 35
+            },
+            {
+              "weekday": 33,
+              "weekend": 38
+            },
+            {
+              "weekday": 39,
+              "weekend": 46
+            },
+            {
+              "weekday": 40,
+              "weekend": 45
+            },
+            {
+              "weekday": 43,
+              "weekend": 50
+            },
+            {
+              "weekday": 54,
+              "weekend": 61
+            },
+            {
+              "weekday": 88,
+              "weekend": 104
+            },
+            {
+              "weekday": 106,
+              "weekend": 125
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 30,
+              "weekend": 38
+            },
+            {
+              "weekday": 35,
+              "weekend": 41
+            },
+            {
+              "weekday": 41,
+              "weekend": 50
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 46,
+              "weekend": 54
+            },
+            {
+              "weekday": 57,
+              "weekend": 66
+            },
+            {
+              "weekday": 96,
+              "weekend": 112
+            },
+            {
+              "weekday": 115,
+              "weekend": 135
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 19,
+              "weekend": 21
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 31,
+              "weekend": 39
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 45,
+              "weekend": 53
+            },
+            {
+              "weekday": 43,
+              "weekend": 49
+            },
+            {
+              "weekday": 47,
+              "weekend": 58
+            },
+            {
+              "weekday": 58,
+              "weekend": 67
+            },
+            {
+              "weekday": 100,
+              "weekend": 115
+            },
+            {
+              "weekday": 120,
+              "weekend": 141
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 33,
+              "weekend": 41
+            },
+            {
+              "weekday": 38,
+              "weekend": 47
+            },
+            {
+              "weekday": 47,
+              "weekend": 56
+            },
+            {
+              "weekday": 45,
+              "weekend": 53
+            },
+            {
+              "weekday": 50,
+              "weekend": 61
+            },
+            {
+              "weekday": 60,
+              "weekend": 72
+            },
+            {
+              "weekday": 108,
+              "weekend": 126
+            },
+            {
+              "weekday": 131,
+              "weekend": 153
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 50,
+              "weekend": 57
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 65,
+              "weekend": 76
+            },
+            {
+              "weekday": 120,
+              "weekend": 140
+            },
+            {
+              "weekday": 143,
+              "weekend": 168
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 38
+            },
+            {
+              "weekday": 48,
+              "weekend": 56
+            },
+            {
+              "weekday": 53,
+              "weekend": 62
+            },
+            {
+              "weekday": 64,
+              "weekend": 75
+            },
+            {
+              "weekday": 66,
+              "weekend": 77
+            },
+            {
+              "weekday": 72,
+              "weekend": 84
+            },
+            {
+              "weekday": 88,
+              "weekend": 98
+            },
+            {
+              "weekday": 146,
+              "weekend": 171
+            },
+            {
+              "weekday": 176,
+              "weekend": 207
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VWL-BRV",
+      "name": "Boulder Ridge Villas",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_VWL-BRV.pdf",
+      "sourceSha256": "76be7b5c8a1dabd22ed8ff17754c6bb86572702ac8e871ee03b0654493508976",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 16
+            },
+            {
+              "weekday": 27,
+              "weekend": 31
+            },
+            {
+              "weekday": 36,
+              "weekend": 41
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 30,
+              "weekend": 34
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 44,
+              "weekend": 48
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 46,
+              "weekend": 51
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 21
+            },
+            {
+              "weekday": 37,
+              "weekend": 42
+            },
+            {
+              "weekday": 49,
+              "weekend": 54
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 26,
+              "weekend": 28
+            },
+            {
+              "weekday": 47,
+              "weekend": 55
+            },
+            {
+              "weekday": 64,
+              "weekend": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CFW",
+      "name": "The Cabins at Fort Wilderness",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_CFW.pdf",
+      "sourceSha256": "0e6692cf0caa6bbbd64e55cd4103835a4ce5ab404686bead34d7e05c305ea8c5",
+      "categories": [
+        {
+          "room": "Cabin",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 18
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 19
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 20,
+              "weekend": 24
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 28
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 32,
+              "weekend": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCC-CCVC",
+      "name": "Copper Creek Villas & Cabins",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_WCC-CCVC.pdf",
+      "sourceSha256": "7b4a4a42c3c134141c1466fd69398f892d52baa4760458e6b4fa0b7d11a59c59",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Cabin",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 91,
+              "weekend": 107
+            },
+            {
+              "weekday": 84,
+              "weekend": 100
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 30,
+              "weekend": 34
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 101,
+              "weekend": 116
+            },
+            {
+              "weekday": 94,
+              "weekend": 109
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 33,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 108,
+              "weekend": 124
+            },
+            {
+              "weekday": 101,
+              "weekend": 117
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 18
+            },
+            {
+              "weekday": 34,
+              "weekend": 38
+            },
+            {
+              "weekday": 43,
+              "weekend": 49
+            },
+            {
+              "weekday": 113,
+              "weekend": 130
+            },
+            {
+              "weekday": 107,
+              "weekend": 121
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 35,
+              "weekend": 42
+            },
+            {
+              "weekday": 45,
+              "weekend": 52
+            },
+            {
+              "weekday": 120,
+              "weekend": 137
+            },
+            {
+              "weekday": 113,
+              "weekend": 131
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 37,
+              "weekend": 43
+            },
+            {
+              "weekday": 50,
+              "weekend": 56
+            },
+            {
+              "weekday": 128,
+              "weekend": 147
+            },
+            {
+              "weekday": 124,
+              "weekend": 143
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 48,
+              "weekend": 54
+            },
+            {
+              "weekday": 64,
+              "weekend": 72
+            },
+            {
+              "weekday": 176,
+              "weekend": 206
+            },
+            {
+              "weekday": 171,
+              "weekend": 196
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AKV_AKV2",
+      "name": "Animal Kingdom Villas (Jambo House / Kidani Village)",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_AKV_AKV2.pdf",
+      "sourceSha256": "e9bab323be327004f5bbfa94b89e4c4946bdae42e5255eeceb49a43a1b1786e5",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": "Value Accommodation"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Savanna View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Kilimanjaro Club Concierge"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Value Accommodation"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Savanna View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Kilimanjaro Club Concierge"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Value Accommodation"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Savanna View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Kilimanjaro Club Concierge"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Savanna View"
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 8,
+              "weekend": 11
+            },
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 12,
+              "weekend": 15
+            },
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 19,
+              "weekend": 23
+            },
+            {
+              "weekday": 20,
+              "weekend": 25
+            },
+            {
+              "weekday": 26,
+              "weekend": 30
+            },
+            {
+              "weekday": 41,
+              "weekend": 46
+            },
+            {
+              "weekday": 25,
+              "weekend": 32
+            },
+            {
+              "weekday": 28,
+              "weekend": 34
+            },
+            {
+              "weekday": 35,
+              "weekend": 43
+            },
+            {
+              "weekday": 55,
+              "weekend": 62
+            },
+            {
+              "weekday": 68,
+              "weekend": 78
+            },
+            {
+              "weekday": 73,
+              "weekend": 85
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 9,
+              "weekend": 12
+            },
+            {
+              "weekday": 12,
+              "weekend": 14
+            },
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 21,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 28
+            },
+            {
+              "weekday": 30,
+              "weekend": 33
+            },
+            {
+              "weekday": 43,
+              "weekend": 48
+            },
+            {
+              "weekday": 28,
+              "weekend": 34
+            },
+            {
+              "weekday": 31,
+              "weekend": 37
+            },
+            {
+              "weekday": 39,
+              "weekend": 47
+            },
+            {
+              "weekday": 59,
+              "weekend": 68
+            },
+            {
+              "weekday": 73,
+              "weekend": 82
+            },
+            {
+              "weekday": 79,
+              "weekend": 89
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 9,
+              "weekend": 13
+            },
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 15,
+              "weekend": 17
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 23,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 32,
+              "weekend": 35
+            },
+            {
+              "weekday": 45,
+              "weekend": 51
+            },
+            {
+              "weekday": 31,
+              "weekend": 35
+            },
+            {
+              "weekday": 32,
+              "weekend": 39
+            },
+            {
+              "weekday": 42,
+              "weekend": 50
+            },
+            {
+              "weekday": 63,
+              "weekend": 70
+            },
+            {
+              "weekday": 78,
+              "weekend": 88
+            },
+            {
+              "weekday": 86,
+              "weekend": 96
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 14,
+              "weekend": 15
+            },
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 25,
+              "weekend": 27
+            },
+            {
+              "weekday": 23,
+              "weekend": 25
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 33,
+              "weekend": 35
+            },
+            {
+              "weekday": 47,
+              "weekend": 51
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 43,
+              "weekend": 50
+            },
+            {
+              "weekday": 65,
+              "weekend": 72
+            },
+            {
+              "weekday": 81,
+              "weekend": 91
+            },
+            {
+              "weekday": 89,
+              "weekend": 100
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 11,
+              "weekend": 14
+            },
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 25,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 50,
+              "weekend": 57
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 57
+            },
+            {
+              "weekday": 68,
+              "weekend": 79
+            },
+            {
+              "weekday": 88,
+              "weekend": 100
+            },
+            {
+              "weekday": 96,
+              "weekend": 110
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 16
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 27,
+              "weekend": 31
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 32,
+              "weekend": 35
+            },
+            {
+              "weekday": 37,
+              "weekend": 41
+            },
+            {
+              "weekday": 54,
+              "weekend": 61
+            },
+            {
+              "weekday": 37,
+              "weekend": 43
+            },
+            {
+              "weekday": 40,
+              "weekend": 48
+            },
+            {
+              "weekday": 52,
+              "weekend": 61
+            },
+            {
+              "weekday": 74,
+              "weekend": 87
+            },
+            {
+              "weekday": 97,
+              "weekend": 111
+            },
+            {
+              "weekday": 107,
+              "weekend": 121
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 21,
+              "weekend": 23
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 37,
+              "weekend": 40
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 38,
+              "weekend": 45
+            },
+            {
+              "weekday": 45,
+              "weekend": 51
+            },
+            {
+              "weekday": 67,
+              "weekend": 74
+            },
+            {
+              "weekday": 51,
+              "weekend": 56
+            },
+            {
+              "weekday": 55,
+              "weekend": 60
+            },
+            {
+              "weekday": 70,
+              "weekend": 76
+            },
+            {
+              "weekday": 99,
+              "weekend": 109
+            },
+            {
+              "weekday": 117,
+              "weekend": 135
+            },
+            {
+              "weekday": 127,
+              "weekend": 144
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BCV",
+      "name": "Beach Club Villas",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_BCV.pdf",
+      "sourceSha256": "06ec6df4a1f0bfd1c784724af60014d5a408bef3837c8cd10b1b64d0c6719c04",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 15
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 36,
+              "weekend": 43
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 29,
+              "weekend": 33
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 46
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 35,
+              "weekend": 38
+            },
+            {
+              "weekday": 44,
+              "weekend": 47
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 36,
+              "weekend": 39
+            },
+            {
+              "weekday": 46,
+              "weekend": 52
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 22
+            },
+            {
+              "weekday": 37,
+              "weekend": 42
+            },
+            {
+              "weekday": 48,
+              "weekend": 55
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 27,
+              "weekend": 28
+            },
+            {
+              "weekday": 51,
+              "weekend": 56
+            },
+            {
+              "weekday": 68,
+              "weekend": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BWALK",
+      "name": "BoardWalk Villas",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_BWALK.pdf",
+      "sourceSha256": "ee9f6b5f32c1368dfefa00e43528386c4e6a0c9d525cf375da95c9ce327aa1a6",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Boardwalk / Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Boardwalk / Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Boardwalk / Preferred View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Boardwalk / Preferred View"
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 19,
+              "weekend": 27
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 29,
+              "weekend": 35
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 76,
+              "weekend": 88
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 14
+            },
+            {
+              "weekday": 15,
+              "weekend": 16
+            },
+            {
+              "weekday": 23,
+              "weekend": 28
+            },
+            {
+              "weekday": 29,
+              "weekend": 34
+            },
+            {
+              "weekday": 32,
+              "weekend": 38
+            },
+            {
+              "weekday": 39,
+              "weekend": 45
+            },
+            {
+              "weekday": 81,
+              "weekend": 91
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 11,
+              "weekend": 15
+            },
+            {
+              "weekday": 16,
+              "weekend": 17
+            },
+            {
+              "weekday": 24,
+              "weekend": 30
+            },
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 31,
+              "weekend": 41
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 88,
+              "weekend": 97
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 11,
+              "weekend": 16
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 25,
+              "weekend": 31
+            },
+            {
+              "weekday": 35,
+              "weekend": 39
+            },
+            {
+              "weekday": 33,
+              "weekend": 44
+            },
+            {
+              "weekday": 43,
+              "weekend": 47
+            },
+            {
+              "weekday": 91,
+              "weekend": 102
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 28,
+              "weekend": 33
+            },
+            {
+              "weekday": 35,
+              "weekend": 41
+            },
+            {
+              "weekday": 39,
+              "weekend": 45
+            },
+            {
+              "weekday": 45,
+              "weekend": 51
+            },
+            {
+              "weekday": 101,
+              "weekend": 114
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 39,
+              "weekend": 43
+            },
+            {
+              "weekday": 43,
+              "weekend": 49
+            },
+            {
+              "weekday": 51,
+              "weekend": 55
+            },
+            {
+              "weekday": 110,
+              "weekend": 124
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 28,
+              "weekend": 29
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 50,
+              "weekend": 56
+            },
+            {
+              "weekday": 60,
+              "weekend": 67
+            },
+            {
+              "weekday": 68,
+              "weekend": 77
+            },
+            {
+              "weekday": 133,
+              "weekend": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HH",
+      "name": "Hilton Head Island Resort",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_HH.pdf",
+      "sourceSha256": "5be9a94be68552e477a810823d61b72c8079bbff4ea72245f11f262ec7b7d3cf",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Jan 1 – Jan 31; Dec 1 – Dec 17",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 6,
+              "weekend": 12
+            },
+            {
+              "weekday": 14,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 27,
+              "weekend": 39
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Feb 1 – Mar 31; Nov 1 – Nov 30; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-03-31"
+            },
+            {
+              "start": "2027-11-01",
+              "end": "2027-11-30"
+            },
+            {
+              "start": "2027-12-18",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 15
+            },
+            {
+              "weekday": 20,
+              "weekend": 29
+            },
+            {
+              "weekday": 24,
+              "weekend": 36
+            },
+            {
+              "weekday": 47,
+              "weekend": 60
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Apr 1 – Jun 10; Aug 28 – Oct 31",
+          "ranges": [
+            {
+              "start": "2027-04-01",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-08-28",
+              "end": "2027-10-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 23
+            },
+            {
+              "weekday": 27,
+              "weekend": 44
+            },
+            {
+              "weekday": 33,
+              "weekend": 56
+            },
+            {
+              "weekday": 59,
+              "weekend": 95
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Jun 11 – Aug 27",
+          "ranges": [
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-27"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 27
+            },
+            {
+              "weekday": 31,
+              "weekend": 52
+            },
+            {
+              "weekday": 41,
+              "weekend": 66
+            },
+            {
+              "weekday": 71,
+              "weekend": 111
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CLUB-OKW",
+      "name": "Old Key West Resort",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_CLUB-OKW.pdf",
+      "sourceSha256": "bdfe62899d6b3bf6f476c74e389f22d5d59299ddc5ffb73c7dd7fa700b811312",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 9,
+              "weekend": 13
+            },
+            {
+              "weekday": 20,
+              "weekend": 25
+            },
+            {
+              "weekday": 27,
+              "weekend": 35
+            },
+            {
+              "weekday": 46,
+              "weekend": 56
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 14
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 31,
+              "weekend": 35
+            },
+            {
+              "weekday": 50,
+              "weekend": 59
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 15
+            },
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 34,
+              "weekend": 38
+            },
+            {
+              "weekday": 53,
+              "weekend": 64
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 11,
+              "weekend": 16
+            },
+            {
+              "weekday": 26,
+              "weekend": 30
+            },
+            {
+              "weekday": 36,
+              "weekend": 41
+            },
+            {
+              "weekday": 56,
+              "weekend": 69
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 17
+            },
+            {
+              "weekday": 28,
+              "weekend": 34
+            },
+            {
+              "weekday": 39,
+              "weekend": 44
+            },
+            {
+              "weekday": 59,
+              "weekend": 71
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 42,
+              "weekend": 49
+            },
+            {
+              "weekday": 66,
+              "weekend": 79
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 40,
+              "weekend": 50
+            },
+            {
+              "weekday": 57,
+              "weekend": 65
+            },
+            {
+              "weekday": 82,
+              "weekend": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "POLYV",
+      "name": "Polynesian Villas & Bungalows / Island Tower",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_POLYV.pdf",
+      "sourceSha256": "d55fd425dbfb1dd407e89f1724e53644811ba14b25e5a98a74c18231cc16fadc",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Bungalow",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Duo Studio (Island Tower)",
+          "view": "Resort View"
+        },
+        {
+          "room": "Duo Studio (Island Tower)",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Duo Studio (Island Tower)",
+          "view": "Premium View"
+        },
+        {
+          "room": "Deluxe Studio (Island Tower)",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio (Island Tower)",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Deluxe Studio (Island Tower)",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "1-Bedroom Villa (Island Tower)",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa (Island Tower)",
+          "view": "Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa (Island Tower)",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "2-Bedroom Villa (Island Tower)",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa (Island Tower)",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa (Island Tower)",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "2-Bedroom Penthouse Villa (Island Tower)",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Penthouse Villa (Island Tower)",
+          "view": "Theme Park View"
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 114,
+              "weekend": 134
+            },
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 30,
+              "weekend": 36
+            },
+            {
+              "weekday": 39,
+              "weekend": 47
+            },
+            {
+              "weekday": 44,
+              "weekend": 53
+            },
+            {
+              "weekday": 46,
+              "weekend": 55
+            },
+            {
+              "weekday": 56,
+              "weekend": 67
+            },
+            {
+              "weekday": 70,
+              "weekend": 81
+            },
+            {
+              "weekday": 88,
+              "weekend": 105
+            },
+            {
+              "weekday": 110,
+              "weekend": 129
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 122,
+              "weekend": 140
+            },
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 30
+            },
+            {
+              "weekday": 34,
+              "weekend": 40
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 47,
+              "weekend": 54
+            },
+            {
+              "weekday": 49,
+              "weekend": 57
+            },
+            {
+              "weekday": 61,
+              "weekend": 69
+            },
+            {
+              "weekday": 72,
+              "weekend": 85
+            },
+            {
+              "weekday": 96,
+              "weekend": 113
+            },
+            {
+              "weekday": 118,
+              "weekend": 136
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 128,
+              "weekend": 147
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 21
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 22,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 52
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 62,
+              "weekend": 73
+            },
+            {
+              "weekday": 76,
+              "weekend": 90
+            },
+            {
+              "weekday": 102,
+              "weekend": 119
+            },
+            {
+              "weekday": 122,
+              "weekend": 144
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 136,
+              "weekend": 157
+            },
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 22
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 33
+            },
+            {
+              "weekday": 40,
+              "weekend": 46
+            },
+            {
+              "weekday": 48,
+              "weekend": 54
+            },
+            {
+              "weekday": 54,
+              "weekend": 63
+            },
+            {
+              "weekday": 56,
+              "weekend": 65
+            },
+            {
+              "weekday": 68,
+              "weekend": 79
+            },
+            {
+              "weekday": 82,
+              "weekend": 96
+            },
+            {
+              "weekday": 108,
+              "weekend": 122
+            },
+            {
+              "weekday": 128,
+              "weekend": 152
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 150,
+              "weekend": 172
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 25,
+              "weekend": 30
+            },
+            {
+              "weekday": 31,
+              "weekend": 36
+            },
+            {
+              "weekday": 44,
+              "weekend": 50
+            },
+            {
+              "weekday": 53,
+              "weekend": 60
+            },
+            {
+              "weekday": 58,
+              "weekend": 67
+            },
+            {
+              "weekday": 62,
+              "weekend": 70
+            },
+            {
+              "weekday": 73,
+              "weekend": 84
+            },
+            {
+              "weekday": 90,
+              "weekend": 101
+            },
+            {
+              "weekday": 115,
+              "weekend": 132
+            },
+            {
+              "weekday": 140,
+              "weekend": 162
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 162,
+              "weekend": 185
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 25,
+              "weekend": 28
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 48,
+              "weekend": 56
+            },
+            {
+              "weekday": 54,
+              "weekend": 64
+            },
+            {
+              "weekday": 65,
+              "weekend": 75
+            },
+            {
+              "weekday": 68,
+              "weekend": 79
+            },
+            {
+              "weekday": 79,
+              "weekend": 90
+            },
+            {
+              "weekday": 96,
+              "weekend": 110
+            },
+            {
+              "weekday": 126,
+              "weekend": 144
+            },
+            {
+              "weekday": 153,
+              "weekend": 179
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 34,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 43
+            },
+            {
+              "weekday": 199,
+              "weekend": 226
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 39,
+              "weekend": 43
+            },
+            {
+              "weekday": 34,
+              "weekend": 36
+            },
+            {
+              "weekday": 41,
+              "weekend": 43
+            },
+            {
+              "weekday": 48,
+              "weekend": 53
+            },
+            {
+              "weekday": 68,
+              "weekend": 78
+            },
+            {
+              "weekday": 78,
+              "weekend": 86
+            },
+            {
+              "weekday": 89,
+              "weekend": 98
+            },
+            {
+              "weekday": 92,
+              "weekend": 105
+            },
+            {
+              "weekday": 109,
+              "weekend": 125
+            },
+            {
+              "weekday": 128,
+              "weekend": 149
+            },
+            {
+              "weekday": 178,
+              "weekend": 198
+            },
+            {
+              "weekday": 197,
+              "weekend": 226
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RVA",
+      "name": "Riviera Resort",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_RVA.pdf",
+      "sourceSha256": "61375690a99948bea5430e5bbd923def4463de67a5db5e8aa0781ec3bbdc015a",
+      "categories": [
+        {
+          "room": "Tower Studio",
+          "view": ""
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 17,
+              "weekend": 22
+            },
+            {
+              "weekday": 29,
+              "weekend": 34
+            },
+            {
+              "weekday": 36,
+              "weekend": 46
+            },
+            {
+              "weekday": 38,
+              "weekend": 47
+            },
+            {
+              "weekday": 47,
+              "weekend": 58
+            },
+            {
+              "weekday": 103,
+              "weekend": 120
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 12,
+              "weekend": 14
+            },
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 24
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 41,
+              "weekend": 50
+            },
+            {
+              "weekday": 44,
+              "weekend": 49
+            },
+            {
+              "weekday": 52,
+              "weekend": 61
+            },
+            {
+              "weekday": 108,
+              "weekend": 127
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 17,
+              "weekend": 19
+            },
+            {
+              "weekday": 20,
+              "weekend": 26
+            },
+            {
+              "weekday": 35,
+              "weekend": 42
+            },
+            {
+              "weekday": 44,
+              "weekend": 54
+            },
+            {
+              "weekday": 47,
+              "weekend": 53
+            },
+            {
+              "weekday": 55,
+              "weekend": 67
+            },
+            {
+              "weekday": 116,
+              "weekend": 135
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 26
+            },
+            {
+              "weekday": 36,
+              "weekend": 48
+            },
+            {
+              "weekday": 48,
+              "weekend": 58
+            },
+            {
+              "weekday": 50,
+              "weekend": 59
+            },
+            {
+              "weekday": 59,
+              "weekend": 70
+            },
+            {
+              "weekday": 120,
+              "weekend": 141
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 19,
+              "weekend": 22
+            },
+            {
+              "weekday": 24,
+              "weekend": 28
+            },
+            {
+              "weekday": 39,
+              "weekend": 50
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 52,
+              "weekend": 63
+            },
+            {
+              "weekday": 65,
+              "weekend": 74
+            },
+            {
+              "weekday": 129,
+              "weekend": 154
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 43,
+              "weekend": 53
+            },
+            {
+              "weekday": 53,
+              "weekend": 63
+            },
+            {
+              "weekday": 56,
+              "weekend": 65
+            },
+            {
+              "weekday": 71,
+              "weekend": 79
+            },
+            {
+              "weekday": 140,
+              "weekend": 166
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 29,
+              "weekend": 32
+            },
+            {
+              "weekday": 35,
+              "weekend": 40
+            },
+            {
+              "weekday": 58,
+              "weekend": 68
+            },
+            {
+              "weekday": 68,
+              "weekend": 81
+            },
+            {
+              "weekday": 77,
+              "weekend": 90
+            },
+            {
+              "weekday": 88,
+              "weekend": 103
+            },
+            {
+              "weekday": 172,
+              "weekend": 204
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SSR",
+      "name": "Saratoga Springs Resort & Spa",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_SSR.pdf",
+      "sourceSha256": "86efe39835b642283e07a1e6265e7e36ee2460487546653ddb524a8f6a6c6de1",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": "Standard"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Standard"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Preferred"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Standard"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Preferred"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Standard"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Preferred"
+        },
+        {
+          "room": "3-Bedroom Treehouse Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 9,
+              "weekend": 14
+            },
+            {
+              "weekday": 11,
+              "weekend": 16
+            },
+            {
+              "weekday": 21,
+              "weekend": 27
+            },
+            {
+              "weekday": 24,
+              "weekend": 30
+            },
+            {
+              "weekday": 27,
+              "weekend": 34
+            },
+            {
+              "weekday": 35,
+              "weekend": 39
+            },
+            {
+              "weekday": 63,
+              "weekend": 72
+            },
+            {
+              "weekday": 74,
+              "weekend": 84
+            },
+            {
+              "weekday": 38,
+              "weekend": 43
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 12,
+              "weekend": 15
+            },
+            {
+              "weekday": 13,
+              "weekend": 17
+            },
+            {
+              "weekday": 24,
+              "weekend": 29
+            },
+            {
+              "weekday": 28,
+              "weekend": 34
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 38,
+              "weekend": 42
+            },
+            {
+              "weekday": 68,
+              "weekend": 78
+            },
+            {
+              "weekday": 76,
+              "weekend": 89
+            },
+            {
+              "weekday": 41,
+              "weekend": 45
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 30,
+              "weekend": 35
+            },
+            {
+              "weekday": 35,
+              "weekend": 39
+            },
+            {
+              "weekday": 39,
+              "weekend": 45
+            },
+            {
+              "weekday": 74,
+              "weekend": 83
+            },
+            {
+              "weekday": 82,
+              "weekend": 94
+            },
+            {
+              "weekday": 43,
+              "weekend": 48
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 28,
+              "weekend": 33
+            },
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 36,
+              "weekend": 39
+            },
+            {
+              "weekday": 41,
+              "weekend": 50
+            },
+            {
+              "weekday": 77,
+              "weekend": 86
+            },
+            {
+              "weekday": 87,
+              "weekend": 98
+            },
+            {
+              "weekday": 44,
+              "weekend": 51
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 30,
+              "weekend": 34
+            },
+            {
+              "weekday": 34,
+              "weekend": 39
+            },
+            {
+              "weekday": 37,
+              "weekend": 45
+            },
+            {
+              "weekday": 46,
+              "weekend": 54
+            },
+            {
+              "weekday": 86,
+              "weekend": 97
+            },
+            {
+              "weekday": 98,
+              "weekend": 112
+            },
+            {
+              "weekday": 47,
+              "weekend": 52
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 38,
+              "weekend": 42
+            },
+            {
+              "weekday": 41,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 93,
+              "weekend": 107
+            },
+            {
+              "weekday": 108,
+              "weekend": 125
+            },
+            {
+              "weekday": 51,
+              "weekend": 58
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 25
+            },
+            {
+              "weekday": 23,
+              "weekend": 28
+            },
+            {
+              "weekday": 43,
+              "weekend": 47
+            },
+            {
+              "weekday": 49,
+              "weekend": 53
+            },
+            {
+              "weekday": 56,
+              "weekend": 63
+            },
+            {
+              "weekday": 67,
+              "weekend": 75
+            },
+            {
+              "weekday": 113,
+              "weekend": 127
+            },
+            {
+              "weekday": 131,
+              "weekend": 139
+            },
+            {
+              "weekday": 66,
+              "weekend": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VERO",
+      "name": "Vero Beach Resort",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_VERO.pdf",
+      "sourceSha256": "d8f34852a80765d05657a175ab3cd975ea02a8d6baa76dc53bea54096dfd90d3",
+      "categories": [
+        {
+          "room": "Deluxe Inn Room",
+          "view": "Standard View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "Deluxe Inn Room",
+          "view": "Ocean View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "3-Bedroom Beach Cottage",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Nov 23",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-11-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 16
+            },
+            {
+              "weekday": 12,
+              "weekend": 17
+            },
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 21,
+              "weekend": 29
+            },
+            {
+              "weekday": 30,
+              "weekend": 39
+            },
+            {
+              "weekday": 60,
+              "weekend": 72
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "May 1 – May 31; Nov 27 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-31"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 17
+            },
+            {
+              "weekday": 13,
+              "weekend": 18
+            },
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 24,
+              "weekend": 31
+            },
+            {
+              "weekday": 33,
+              "weekend": 42
+            },
+            {
+              "weekday": 61,
+              "weekend": 74
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Jan 1 – Jan 31; Jun 1 – Aug 31; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-06-01",
+              "end": "2027-08-31"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 29,
+              "weekend": 37
+            },
+            {
+              "weekday": 36,
+              "weekend": 47
+            },
+            {
+              "weekday": 73,
+              "weekend": 88
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 13; Apr 4 – Apr 30",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-13"
+            },
+            {
+              "start": "2027-04-04",
+              "end": "2027-04-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 15,
+              "weekend": 20
+            },
+            {
+              "weekday": 17,
+              "weekend": 21
+            },
+            {
+              "weekday": 19,
+              "weekend": 23
+            },
+            {
+              "weekday": 31,
+              "weekend": 40
+            },
+            {
+              "weekday": 44,
+              "weekend": 52
+            },
+            {
+              "weekday": 81,
+              "weekend": 99
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Feb 14 – Apr 3; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-02-14",
+              "end": "2027-04-03"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 21,
+              "weekend": 27
+            },
+            {
+              "weekday": 23,
+              "weekend": 29
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 43,
+              "weekend": 53
+            },
+            {
+              "weekday": 61,
+              "weekend": 72
+            },
+            {
+              "weekday": 105,
+              "weekend": 126
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GCAL-VGC",
+      "name": "Grand Californian Hotel & Spa",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_GCAL-VGC.pdf",
+      "sourceSha256": "012c733c0d50fb4524e54d1f01943945e6d0f6b4fb1ecb72294cbfe3dca96ec9",
+      "categories": [
+        {
+          "room": "Deluxe Studio",
+          "view": ""
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": ""
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Jan 3 – Feb 27; Sep 5 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-01-03",
+              "end": "2027-02-27"
+            },
+            {
+              "start": "2027-09-05",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 22
+            },
+            {
+              "weekday": 31,
+              "weekend": 40
+            },
+            {
+              "weekday": 46,
+              "weekend": 56
+            },
+            {
+              "weekday": 94,
+              "weekend": 119
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Apr 4 – Jun 27; Oct 1 – Nov 22; Nov 28 – Dec 16",
+          "ranges": [
+            {
+              "start": "2027-04-04",
+              "end": "2027-06-27"
+            },
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-22"
+            },
+            {
+              "start": "2027-11-28",
+              "end": "2027-12-16"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 39,
+              "weekend": 48
+            },
+            {
+              "weekday": 52,
+              "weekend": 65
+            },
+            {
+              "weekday": 106,
+              "weekend": 133
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Feb 28 – Mar 18; Jun 28 – Sep 4",
+          "ranges": [
+            {
+              "start": "2027-02-28",
+              "end": "2027-03-18"
+            },
+            {
+              "start": "2027-06-28",
+              "end": "2027-09-04"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 26,
+              "weekend": 32
+            },
+            {
+              "weekday": 52,
+              "weekend": 64
+            },
+            {
+              "weekday": 70,
+              "weekend": 88
+            },
+            {
+              "weekday": 152,
+              "weekend": 188
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Jan 1 – Jan 2; Mar 19 – Apr 3; Nov 23 – Nov 27; Dec 17 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-02"
+            },
+            {
+              "start": "2027-03-19",
+              "end": "2027-04-03"
+            },
+            {
+              "start": "2027-11-23",
+              "end": "2027-11-27"
+            },
+            {
+              "start": "2027-12-17",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 30,
+              "weekend": 37
+            },
+            {
+              "weekday": 62,
+              "weekend": 76
+            },
+            {
+              "weekday": 86,
+              "weekend": 108
+            },
+            {
+              "weekday": 182,
+              "weekend": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VGF",
+      "name": "Grand Floridian Resort & Spa",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_VGF.pdf",
+      "sourceSha256": "4621c4a25d385fdbc2f68ef9c2bfaa82b2ffbd9a631057494a3ef83fe47d5f8a",
+      "categories": [
+        {
+          "room": "Resort Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Resort Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Resort Studio",
+          "view": "Theme Park View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Resort View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Resort View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Sep 1 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-09-01",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 20
+            },
+            {
+              "weekday": 19,
+              "weekend": 24
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 16,
+              "weekend": 20
+            },
+            {
+              "weekday": 19,
+              "weekend": 24
+            },
+            {
+              "weekday": 31,
+              "weekend": 41
+            },
+            {
+              "weekday": 39,
+              "weekend": 48
+            },
+            {
+              "weekday": 44,
+              "weekend": 55
+            },
+            {
+              "weekday": 54,
+              "weekend": 65
+            },
+            {
+              "weekday": 111,
+              "weekend": 131
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jan 1 – Jan 31; May 1 – May 14",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            },
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-14"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 25,
+              "weekend": 29
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 36,
+              "weekend": 44
+            },
+            {
+              "weekday": 43,
+              "weekend": 51
+            },
+            {
+              "weekday": 49,
+              "weekend": 58
+            },
+            {
+              "weekday": 59,
+              "weekend": 68
+            },
+            {
+              "weekday": 118,
+              "weekend": 138
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "May 15 – Jun 10; Dec 1 – Dec 23",
+          "ranges": [
+            {
+              "start": "2027-05-15",
+              "end": "2027-06-10"
+            },
+            {
+              "start": "2027-12-01",
+              "end": "2027-12-23"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 21,
+              "weekend": 26
+            },
+            {
+              "weekday": 26,
+              "weekend": 31
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 21,
+              "weekend": 26
+            },
+            {
+              "weekday": 38,
+              "weekend": 46
+            },
+            {
+              "weekday": 46,
+              "weekend": 55
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 62,
+              "weekend": 74
+            },
+            {
+              "weekday": 126,
+              "weekend": 148
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Feb 1 – Feb 15; Jun 11 – Aug 31",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-02-15"
+            },
+            {
+              "start": "2027-06-11",
+              "end": "2027-08-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 22,
+              "weekend": 27
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 22,
+              "weekend": 27
+            },
+            {
+              "weekday": 41,
+              "weekend": 48
+            },
+            {
+              "weekday": 49,
+              "weekend": 57
+            },
+            {
+              "weekday": 56,
+              "weekend": 65
+            },
+            {
+              "weekday": 66,
+              "weekend": 78
+            },
+            {
+              "weekday": 131,
+              "weekend": 155
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Oct 1 – Nov 23; Nov 27 – Nov 30",
+          "ranges": [
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-23"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-11-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 32,
+              "weekend": 36
+            },
+            {
+              "weekday": 22,
+              "weekend": 24
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 43,
+              "weekend": 51
+            },
+            {
+              "weekday": 53,
+              "weekend": 61
+            },
+            {
+              "weekday": 61,
+              "weekend": 69
+            },
+            {
+              "weekday": 73,
+              "weekend": 82
+            },
+            {
+              "weekday": 143,
+              "weekend": 169
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Feb 16 – Mar 20; Mar 29 – Apr 30; Nov 24 – Nov 26",
+          "ranges": [
+            {
+              "start": "2027-02-16",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            },
+            {
+              "start": "2027-11-24",
+              "end": "2027-11-26"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 24,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 34,
+              "weekend": 41
+            },
+            {
+              "weekday": 24,
+              "weekend": 26
+            },
+            {
+              "weekday": 27,
+              "weekend": 32
+            },
+            {
+              "weekday": 46,
+              "weekend": 55
+            },
+            {
+              "weekday": 55,
+              "weekend": 66
+            },
+            {
+              "weekday": 65,
+              "weekend": 75
+            },
+            {
+              "weekday": 75,
+              "weekend": 88
+            },
+            {
+              "weekday": 161,
+              "weekend": 187
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Dec 24 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-12-24",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 47,
+              "weekend": 54
+            },
+            {
+              "weekday": 32,
+              "weekend": 37
+            },
+            {
+              "weekday": 38,
+              "weekend": 44
+            },
+            {
+              "weekday": 64,
+              "weekend": 75
+            },
+            {
+              "weekday": 76,
+              "weekend": 89
+            },
+            {
+              "weekday": 87,
+              "weekend": 103
+            },
+            {
+              "weekday": 103,
+              "weekend": 122
+            },
+            {
+              "weekday": 197,
+              "weekend": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VDH",
+      "name": "The Villas at Disneyland Hotel",
+      "source": "https://documents.disneyvacationclub.com/vision-dam/digital/parks-platform/parks-standard-assets/disney-vacation-club/points/2027_VDH.pdf",
+      "sourceSha256": "d4b268b55840cae9250be437ef9eb906ae514176107e3f46d19c7e312d727de2",
+      "categories": [
+        {
+          "room": "Duo Studio",
+          "view": "Standard View"
+        },
+        {
+          "room": "Duo Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Standard View"
+        },
+        {
+          "room": "Deluxe Studio",
+          "view": "Preferred View"
+        },
+        {
+          "room": "1-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "2-Bedroom Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "3-Bedroom Grand Villa",
+          "view": "Preferred View"
+        },
+        {
+          "room": "Garden Room Duo Studio",
+          "view": ""
+        },
+        {
+          "room": "Garden Room Deluxe Studio",
+          "view": ""
+        }
+      ],
+      "periods": [
+        {
+          "id": "1",
+          "label": "Jan 1 – Jan 31",
+          "ranges": [
+            {
+              "start": "2027-01-01",
+              "end": "2027-01-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 10,
+              "weekend": 13
+            },
+            {
+              "weekday": 11,
+              "weekend": 14
+            },
+            {
+              "weekday": 13,
+              "weekend": 16
+            },
+            {
+              "weekday": 15,
+              "weekend": 19
+            },
+            {
+              "weekday": 30,
+              "weekend": 37
+            },
+            {
+              "weekday": 43,
+              "weekend": 53
+            },
+            {
+              "weekday": 96,
+              "weekend": 118
+            },
+            {
+              "weekday": 12,
+              "weekend": 15
+            },
+            {
+              "weekday": 19,
+              "weekend": 23
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "May 1 – May 22; Aug 16 – Sep 15",
+          "ranges": [
+            {
+              "start": "2027-05-01",
+              "end": "2027-05-22"
+            },
+            {
+              "start": "2027-08-16",
+              "end": "2027-09-15"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 12,
+              "weekend": 14
+            },
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 15,
+              "weekend": 18
+            },
+            {
+              "weekday": 18,
+              "weekend": 22
+            },
+            {
+              "weekday": 33,
+              "weekend": 40
+            },
+            {
+              "weekday": 49,
+              "weekend": 59
+            },
+            {
+              "weekday": 106,
+              "weekend": 128
+            },
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 21,
+              "weekend": 25
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Feb 1 – Mar 14; Sep 16 – Sep 30",
+          "ranges": [
+            {
+              "start": "2027-02-01",
+              "end": "2027-03-14"
+            },
+            {
+              "start": "2027-09-16",
+              "end": "2027-09-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 13,
+              "weekend": 15
+            },
+            {
+              "weekday": 14,
+              "weekend": 17
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 20,
+              "weekend": 24
+            },
+            {
+              "weekday": 36,
+              "weekend": 42
+            },
+            {
+              "weekday": 52,
+              "weekend": 61
+            },
+            {
+              "weekday": 122,
+              "weekend": 146
+            },
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 24,
+              "weekend": 28
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "May 23 – May 31; Oct 1 – Nov 22; Nov 27 – Dec 17",
+          "ranges": [
+            {
+              "start": "2027-05-23",
+              "end": "2027-05-31"
+            },
+            {
+              "start": "2027-10-01",
+              "end": "2027-11-22"
+            },
+            {
+              "start": "2027-11-27",
+              "end": "2027-12-17"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 14,
+              "weekend": 16
+            },
+            {
+              "weekday": 15,
+              "weekend": 17
+            },
+            {
+              "weekday": 20,
+              "weekend": 23
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 40,
+              "weekend": 46
+            },
+            {
+              "weekday": 60,
+              "weekend": 69
+            },
+            {
+              "weekday": 129,
+              "weekend": 152
+            },
+            {
+              "weekday": 17,
+              "weekend": 20
+            },
+            {
+              "weekday": 28,
+              "weekend": 32
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Jun 1 – Aug 15",
+          "ranges": [
+            {
+              "start": "2027-06-01",
+              "end": "2027-08-15"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 18
+            },
+            {
+              "weekday": 18,
+              "weekend": 20
+            },
+            {
+              "weekday": 23,
+              "weekend": 26
+            },
+            {
+              "weekday": 26,
+              "weekend": 29
+            },
+            {
+              "weekday": 42,
+              "weekend": 48
+            },
+            {
+              "weekday": 65,
+              "weekend": 73
+            },
+            {
+              "weekday": 149,
+              "weekend": 169
+            },
+            {
+              "weekday": 21,
+              "weekend": 23
+            },
+            {
+              "weekday": 31,
+              "weekend": 34
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Mar 15 – Mar 20; Mar 29 – Apr 30",
+          "ranges": [
+            {
+              "start": "2027-03-15",
+              "end": "2027-03-20"
+            },
+            {
+              "start": "2027-03-29",
+              "end": "2027-04-30"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 16,
+              "weekend": 19
+            },
+            {
+              "weekday": 18,
+              "weekend": 21
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 27,
+              "weekend": 30
+            },
+            {
+              "weekday": 42,
+              "weekend": 50
+            },
+            {
+              "weekday": 65,
+              "weekend": 75
+            },
+            {
+              "weekday": 149,
+              "weekend": 174
+            },
+            {
+              "weekday": 21,
+              "weekend": 24
+            },
+            {
+              "weekday": 31,
+              "weekend": 35
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "Mar 21 – Mar 28; Nov 23 – Nov 26; Dec 18 – Dec 31",
+          "ranges": [
+            {
+              "start": "2027-03-21",
+              "end": "2027-03-28"
+            },
+            {
+              "start": "2027-11-23",
+              "end": "2027-11-26"
+            },
+            {
+              "start": "2027-12-18",
+              "end": "2027-12-31"
+            }
+          ],
+          "rates": [
+            {
+              "weekday": 22,
+              "weekend": 25
+            },
+            {
+              "weekday": 24,
+              "weekend": 27
+            },
+            {
+              "weekday": 28,
+              "weekend": 31
+            },
+            {
+              "weekday": 31,
+              "weekend": 34
+            },
+            {
+              "weekday": 54,
+              "weekend": 62
+            },
+            {
+              "weekday": 82,
+              "weekend": 92
+            },
+            {
+              "weekday": 174,
+              "weekend": 204
+            },
+            {
+              "weekday": 26,
+              "weekend": 30
+            },
+            {
+              "weekday": 37,
+              "weekend": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
