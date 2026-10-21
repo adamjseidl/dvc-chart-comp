@@ -21,6 +21,16 @@ Choose an earliest check-in date and select a resort, room, and view/category. T
 - Enable rankings within Stay totals to compare the seven options separately for each stay. Rankings use the active resort tab; inactive resort point rows are not colored as winners or losers. Drag the rule grips or use the arrow buttons to reorder priorities. Lower-priority rules only break ties; all tied Best/Worst columns are marked.
 - Mobile layouts stack day/point labels and provide collapsible controls. The chart initially shows three days after the latest checkout (at least eight rows). Show 7 more days reveals additional rows; Hide extra days trims them again. Dragging checkout lines stays within the visible rows and does not reveal rows or scroll automatically; use Show 7 more days to extend the table. Desktop always shows all 30 rows.
 
+## Share comparisons
+
+Use **Share Comparison** in Stay totals to copy a versioned URL snapshot. **Show encoded link** exposes the full URL for manual copying. Opening it restores the earliest check-in, up to three resort/room/view selections or manual rates, active tab, checkout lines and colors, rest/travel settings, ranking rule order and preferences, and expanded checkout details. Chart rates and results are recalculated from the bundled data.
+
+State is stored in the URL fragment (`#comparison=v1.…`), with no server storage. Restored dates may be earlier than today if they are still within the bundled coverage. Invalid or unsupported links show a message without replacing the current comparison. When clipboard access is unavailable, the app selects the URL for manual copying.
+
+Share from a hosted copy of the planner for links others can open. A link generated from a local `file:` page retains that local path and requires access to the same files. Copy again after changing settings to generate a new snapshot.
+
+Run share-link encoding checks with `node --test tests/sharing.test.cjs`.
+
 ## Chart data
 
 `points-2027.json` is the structured dataset. `points-2027.js` bundles the same data for direct browser use without a server. The 17 official resort charts cover 829 room/view-and-period rate combinations. Animal Kingdom Villas uses one chart for Jambo House and Kidani Village.
@@ -47,4 +57,12 @@ node --check points-2027.js
 
 Verified chart coverage starts October 20, 2026 and ends December 31, 2027. The date picker excludes past dates using the browser’s local date, and allows check-ins through December 31, 2027. The following six arrival options and stay nights may extend into 2028 using labeled estimates. 2028 nights are estimated from the matching month/day in the 2027 chart, classified using the actual night’s weekday/weekend. February 29 uses February 28. Estimated nightly values and totals have a ~ prefix, and checkout results explain when rankings may depend on estimates. Rates beyond 2028 remain unavailable. Manual rates remain fixed across dates. Point charts do not indicate availability. Accommodation taxes at Aulani and Disneyland Hotel are separate from point totals.
 
-Disney charts and resort names belong to their respective owners. This is an independent planning tool; it is not affiliated with Disney.
+## License
+
+Original software and documentation are licensed under the [MIT License](LICENSE),
+Copyright (c) 2026 Adam Seidl.
+
+Disney's source charts and branding are not covered by that license. See
+[Third-party notices](THIRD_PARTY_NOTICES.md) for scope, source attribution, and
+trademark information. This is an independent project and is not affiliated with
+or endorsed by Disney.

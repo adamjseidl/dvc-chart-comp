@@ -59,9 +59,25 @@ function rankOptions(options, rules) {
   const allTied = compareOptions(sorted[0], sorted[sorted.length - 1], rules) === 0;
   return options.map(option => allTied ? 'Tied' : compareOptions(option, sorted[0], rules) === 0 ? 'Best' : compareOptions(option, sorted[sorted.length - 1], rules) === 0 ? 'Worst' : '');
 }
-if (typeof module !== 'undefined') module.exports = { nightTotal, restDays, parkDays, rankingMetrics, compareOptions, rankOptions };
+function encodeComparison(state) {
+  const bytes = new TextEncoder().encode(JSON.stringify(state));
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return 'v1.' + btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function decodeComparison(encoded) {
+  if (encoded.length > 64000) throw new Error('Comparison link is too large.');
+  if (!encoded.startsWith('v1.')) throw new Error('This comparison link uses an unsupported version.');
+  const payload = encoded.slice(3);
+  if (!payload || !/^[A-Za-z0-9_-]+$/.test(payload)) throw new Error('Invalid comparison encoding.');
+  const base64 = payload.replace(/-/g, '+').replace(/_/g, '/');
+  const binary = atob(base64.padEnd(Math.ceil(base64.length / 4) * 4, '='));
+  return JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(Uint8Array.from(binary, char => char.charCodeAt(0))));
+}
+if (typeof module !== 'undefined') module.exports = { nightTotal, restDays, parkDays, rankingMetrics, compareOptions, rankOptions, encodeComparison, decodeComparison };
 if (typeof document !== 'undefined') {
   const el = id => document.getElementById(id);
+  el('footer-year').textContent = new Date().getFullYear();
   const count = 30;
   let weekday = null, weekend = null, nextId = 1, restInterval = 0;
   const selections = [];
@@ -489,7 +505,18 @@ if (typeof document !== 'undefined') {
     if (Array.from(el('view').options).some(option => option.value === previous)) el('view').value = previous;
   }
   if (pointData) {
-    for (const resort of [...pointData.resorts].sort((a,b) => a.name.localeCompare(b.name))) el('resort').add(new Option(resort.name, resort.id), el('resort').options.length - 1);
+    const resortGroups = [
+      ['Walt Disney World', ['AKV_AKV2','BLT','BCV','BWALK','VWL-BRV','CFW','WCC-CCVC','VGF','CLUB-OKW','POLYV','RVA','SSR']],
+      ['Disneyland', ['GCAL-VGC','VDH']],
+      ['Others', ['AULV','HH','VERO']]
+    ];
+    const sortName = resort => resort.name.replace(/^The /, '');
+    const manualOption = el('resort').querySelector('option[value=""]');
+    for (const [label, ids] of resortGroups) {
+      const group = document.createElement('optgroup'); group.label = label;
+      for (const resort of pointData.resorts.filter(resort => ids.includes(resort.id)).sort((a,b) => sortName(a).localeCompare(sortName(b)))) group.append(new Option(resort.name, resort.id));
+      el('resort').insertBefore(group, manualOption);
+    }
   } else {
     el('preset-status').textContent = 'Chart data could not load. Manual points are still available.';
   }
@@ -522,6 +549,107 @@ if (typeof document !== 'undefined') {
     if (selectedResort() && firstDate()) applyPreset();
     else renderGrid();
   });
+  function sharingState() {
+    saveComparison();
+    if (!firstDate() || comparisons.some(comparison => comparison.resort === 'select' || comparison.weekday === null || comparison.weekend === null)) throw new Error('Complete the date and resort selections before sharing.');
+    return {
+      v: 1, d: el('earliest-checkin').value,
+      r: comparisons.map(({ id, resort, room, view, period, weekday, weekend }) => ({ id, resort, room, view, period, weekday, weekend })),
+      a: activeComparison,
+      s: selections.map(({ id, day, parkOpen, comparisonOpen }) => ({ id, day, parkOpen: !!parkOpen, comparisonOpen: !!comparisonOpen })),
+      i: restInterval, t: el('travel-park').checked, n: requestedRows,
+      k: { on: el('rank').checked, order: Array.from(el('rule-order').children, item => item.dataset.rule), sat: el('rank-sat').checked, sun: el('rank-sun').checked, dep: el('rank-departure').checked, pref: Array.from(document.querySelectorAll('.preferred-day:checked'), input => Number(input.value)) }
+    };
+  }
+  function comparisonLink() {
+    const url = new URL(window.location.href);
+    const state = sharingState();
+    validateSharedState(state);
+    const encoded = encodeComparison(state);
+    if (encoded.length > 64000) throw new Error('This comparison is too large for a share link.');
+    url.hash = 'comparison=' + encoded;
+    return url.href;
+  }
+  function refreshShareField() {
+    try { el('comparison-link').value = comparisonLink(); return true; }
+    catch (error) { el('comparison-link').value = ''; el('share-status').textContent = error.message; return false; }
+  }
+  el('share-link-details').addEventListener('toggle', () => {
+    if (el('share-link-details').open) refreshShareField();
+  });
+  el('comparison-link').addEventListener('click', event => event.target.select());
+  el('copy-comparison').addEventListener('click', async () => {
+    if (!refreshShareField()) return;
+    const link = el('comparison-link').value;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(link);
+      el('share-status').textContent = 'Link copied';
+    } catch {
+      el('share-link-details').open = true;
+      el('comparison-link').focus(); el('comparison-link').select();
+      el('share-status').textContent = 'Automatic copying is unavailable. Copy the selected link below.';
+    }
+  });
+  function validateSharedState(state) {
+    const fail = () => { throw new Error('This comparison link contains invalid or unavailable settings.'); };
+    const integer = (value, min, max) => Number.isSafeInteger(value) && value >= min && value <= max;
+    if (!state || state.v !== 1 || typeof state.d !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(state.d)) fail();
+    const date = new Date(state.d + 'T00:00:00Z');
+    if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0,10) !== state.d || state.d < (pointData?.startDate || '2027-01-01') || state.d > '2027-12-31') fail();
+    if (!Array.isArray(state.r) || state.r.length < 1 || state.r.length > 3 || !integer(state.a, 0, state.r.length - 1)) fail();
+    const ids = new Set();
+    const resorts = state.r.map(item => {
+      if (!item || !integer(item.id,1,1000000) || ids.has(item.id) || typeof item.resort !== 'string') fail();
+      ids.add(item.id);
+      if (item.resort === '') {
+        if (!integer(item.weekday,0,Number.MAX_SAFE_INTEGER) || !integer(item.weekend,0,Number.MAX_SAFE_INTEGER)) fail();
+        return { id:item.id, resort:'', room:'', view:'', period:'', weekday:item.weekday, weekend:item.weekend };
+      }
+      const resort = pointData?.resorts.find(resort => resort.id === item.resort);
+      const index = resort?.categories.findIndex(category => category.room === item.room && category.view === item.view);
+      const period = resort?.periods.find(period => period.ranges.some(range => state.d >= range.start && state.d <= range.end));
+      if (!resort || index < 0 || !period) fail();
+      return { id:item.id, resort:resort.id, room:resort.categories[index].room, view:resort.categories[index].view, period:period.id, ...period.rates[index] };
+    });
+    if (!Array.isArray(state.s) || state.s.length > 128) fail();
+    const lineIds = new Set();
+    const lines = state.s.map(item => {
+      if (!item || !integer(item.id,1,1000000) || lineIds.has(item.id) || !integer(item.day,1,count) || typeof item.parkOpen !== 'boolean' || typeof item.comparisonOpen !== 'boolean') fail();
+      lineIds.add(item.id);
+      return { id:item.id, day:item.day, parkOpen:item.parkOpen, comparisonOpen:item.comparisonOpen, color:COLORS[(item.id-1)%COLORS.length] };
+    });
+    if (!integer(state.i,0,21) || state.i === 1 || typeof state.t !== 'boolean' || !integer(state.n,0,count)) fail();
+    const rules = state.k, names = ['points','saturday','sunday','departure'];
+    if (!rules || ['on','sat','sun','dep'].some(key => typeof rules[key] !== 'boolean') || !Array.isArray(rules.order) || rules.order.length !== 4 || new Set(rules.order).size !== 4 || rules.order.some(key => !names.includes(key)) || !Array.isArray(rules.pref) || rules.pref.length > 7 || new Set(rules.pref).size !== rules.pref.length || rules.pref.some(day => !integer(day,0,6))) fail();
+    return { date:state.d, resorts, lines, active:state.a, interval:state.i, travel:state.t, rows:state.n, rules };
+  }
+  function restoreSharedComparison() {
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    const encoded = params.get('comparison');
+    if (!encoded) return;
+    try {
+      const state = validateSharedState(decodeComparison(encoded));
+      comparisons.splice(0, comparisons.length, ...state.resorts);
+      selections.splice(0, selections.length, ...state.lines);
+      activeComparison = state.active; nextComparisonId = Math.max(...comparisons.map(item => item.id)) + 1;
+      nextId = Math.max(0, ...selections.map(item => item.id)) + 1;
+      requestedRows = state.rows; restInterval = state.interval;
+      el('earliest-checkin').min = coverageStart; el('earliest-checkin').value = state.date;
+      el('rest').value = String(restInterval); el('travel-park').checked = state.travel;
+      el('rank').checked = state.rules.on;
+      el('rank-sat').checked = state.rules.sat; el('rank-sun').checked = state.rules.sun; el('rank-departure').checked = state.rules.dep;
+      for (const name of state.rules.order) el('rule-order').append(document.querySelector(`[data-rule="${name}"]`));
+      for (const input of document.querySelectorAll('.preferred-day')) input.checked = state.rules.pref.includes(Number(input.value));
+      updateRuleButtons(); restoreComparison();
+      el('resort-disclosure').open = !mobilePanels.matches;
+      el('shared-load-status').textContent = 'Shared comparison loaded.' + (state.date < localToday ? ' Its original check-in date has been preserved.' : '');
+    } catch (error) {
+      el('shared-load-status').textContent = 'Could not load this shared comparison. The link may be incomplete, invalid, or from an unsupported version. You can still create a comparison below.';
+    }
+    el('shared-load-status').hidden = false;
+  }
+  window.addEventListener('hashchange', restoreSharedComparison);
   el('more-days').addEventListener('click', () => { requestedRows = Math.min(count, visibleDayCount() + 7); updateVisibleRows(); });
   el('trim-days').addEventListener('click', () => { requestedRows = 0; updateVisibleRows(); });
   window.addEventListener('resize', updateVisibleRows);
@@ -538,4 +666,5 @@ if (typeof document !== 'undefined') {
   el('resort').value = 'select';
   el('resort').dispatchEvent(new Event('change'));
   renderGrid(); el('add').click(); syncDisclosures();
+  restoreSharedComparison();
 }
