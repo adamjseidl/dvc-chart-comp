@@ -9,27 +9,36 @@ function nightTotal(start, checkout, weekday, weekend) {
   }
   return total;
 }
-function restDays(checkout, interval) {
+function isRestDay(day, interval, includeTravel = false) {
+  return interval > 0 && day > 1 && (day - (includeTravel ? 0 : 1)) % interval === 0;
+}
+function restDays(checkout, interval, includeTravel = false) {
   if (!interval) return [];
   const days = [];
-  for (let day = 1 + interval; day < checkout; day += interval) days.push(day);
+  for (let day = interval + (includeTravel ? 0 : 1); day < checkout; day += interval) days.push(day);
   return days;
 }
-function parkDays(start, checkout, interval) {
+function parkDayOffsets(checkout, interval, includeTravel = false) {
+  const offsets = [];
+  for (let day = 1; day <= checkout; day++) {
+    const travel = day === 1 || day === checkout;
+    if (travel ? includeTravel : !isRestDay(day, interval, includeTravel)) offsets.push(day - 1);
+  }
+  return offsets;
+}
+function parkDays(start, checkout, interval, includeTravel = false) {
   let weekdays = 0, weekends = 0;
-  for (let day = 2; day < checkout; day++) {
-    if (interval > 0 && (day - 1) % interval === 0) continue;
-    const weekday = (start + day - 1) % 7;
+  for (const offset of parkDayOffsets(checkout, interval, includeTravel)) {
+    const weekday = (start + offset) % 7;
     if (weekday === 0 || weekday === 6) weekends++;
     else weekdays++;
   }
   return { total: weekdays + weekends, weekdays, weekends };
 }
-function rankingMetrics(start, checkout, weekday, weekend, interval) {
+function rankingMetrics(start, checkout, weekday, weekend, interval, includeTravel = false) {
   let saturday = 0, sunday = 0;
-  for (let day = 2; day < checkout; day++) {
-    if (interval && (day - 1) % interval === 0) continue;
-    const dow = (start + day - 1) % 7;
+  for (const offset of parkDayOffsets(checkout, interval, includeTravel)) {
+    const dow = (start + offset) % 7;
     if (dow === 6) saturday++;
     if (dow === 0) sunday++;
   }
@@ -53,29 +62,190 @@ function rankOptions(options, rules) {
 if (typeof module !== 'undefined') module.exports = { nightTotal, restDays, parkDays, rankingMetrics, compareOptions, rankOptions };
 if (typeof document !== 'undefined') {
   const el = id => document.getElementById(id);
-  let count = 21, weekday = null, weekend = null, nextId = 1, restInterval = 0;
+  const count = 30;
+  let weekday = null, weekend = null, nextId = 1, restInterval = 0;
   const selections = [];
+  let requestedRows = 0;
+  let activeComparison = 0, nextComparisonId = 2;
+  const comparisons = [{ id: 1, resort: 'select', room: '', view: '', period: '', weekday: null, weekend: null }];
+  function saveComparison() {
+    Object.assign(comparisons[activeComparison], { resort: el('resort').value, room: el('room').value, view: el('view').value, period: el('period').value, weekday, weekend });
+  }
+  function comparisonName(comparison) {
+    return window.DVC_POINTS?.resorts.find(resort => resort.id === comparison.resort)?.name || (comparison.resort === '' ? 'Manual points' : 'Select resort');
+  }
+  function renderComparisonTabs() {
+    for (const container of document.querySelectorAll('.comparison-tabs')) {
+      container.replaceChildren();
+      comparisons.forEach((comparison, index) => {
+        const group = document.createElement('div'); group.className = 'comparison-tab-group';
+        const button = document.createElement('button'); button.type = 'button'; button.setAttribute('role', 'tab');
+        button.setAttribute('aria-selected', String(index === activeComparison)); button.tabIndex = index === activeComparison ? 0 : -1;
+        button.textContent = `${comparison.id}. ${comparisonName(comparison)}`;
+        button.title = [comparisonName(comparison), comparison.room, comparison.view].filter(Boolean).join(' · ');
+        button.addEventListener('click', () => switchComparison(index));
+        button.addEventListener('keydown', event => {
+          let next;
+          if (event.key === 'ArrowRight') next = (index + 1) % comparisons.length;
+          if (event.key === 'ArrowLeft') next = (index + comparisons.length - 1) % comparisons.length;
+          if (event.key === 'Home') next = 0;
+          if (event.key === 'End') next = comparisons.length - 1;
+          if (next === undefined) return;
+          event.preventDefault(); switchComparison(next); container.querySelector('[aria-selected="true"]').focus();
+        });
+        group.append(button);
+        if (comparisons.length > 1) {
+          const remove = document.createElement('button'); remove.type = 'button'; remove.className = 'remove-comparison'; remove.textContent = '×';
+          remove.setAttribute('aria-label', `Remove resort ${comparison.id}: ${comparisonName(comparison)}`);
+          remove.addEventListener('click', () => { saveComparison(); comparisons.splice(index, 1); activeComparison = index < activeComparison ? activeComparison - 1 : Math.min(activeComparison, comparisons.length - 1); restoreComparison(); });
+          group.append(remove);
+        }
+        container.append(group);
+      });
+      const add = document.createElement('button'); add.type = 'button'; add.className = 'add-comparison'; add.textContent = '+ Compare resort'; add.disabled = comparisons.length >= 3;
+      add.addEventListener('click', () => {
+        saveComparison(); comparisons.push({ id: nextComparisonId++, resort: 'select', room: '', view: '', period: '', weekday: null, weekend: null });
+        activeComparison = comparisons.length - 1; restoreComparison(); el('resort-disclosure').open = true;
+      });
+      container.append(add);
+    }
+    el('ranking-resort-note').textContent = `Rankings use resort ${comparisons[activeComparison].id}: ${comparisonName(comparisons[activeComparison])}. Park and travel days are shared.`;
+  }
+  function switchComparison(index) { saveComparison(); activeComparison = index; restoreComparison(); }
+  function restoreComparison() {
+    const comparison = comparisons[activeComparison];
+    weekday = comparison.weekday; weekend = comparison.weekend;
+    el('resort').value = comparison.resort;
+    const resort = selectedResort();
+    for (const id of ['room', 'view', 'period']) { el(id).disabled = !resort; el(id).closest('label').hidden = !resort; }
+    el('manual-points').hidden = comparison.resort !== '';
+    el('chart-source').hidden = !resort;
+    el('category-note').hidden = resort?.id !== 'AKV_AKV2';
+    if (resort) {
+      fillSelect(el('room'), [...new Set(resort.categories.map(category => category.room))].map(room => [room, room]));
+      el('room').value = comparison.room;
+      fillViews(); el('view').value = comparison.view;
+      fillSelect(el('period'), resort.periods.map(period => [period.id, period.label])); el('period').value = comparison.period;
+      el('chart-source').href = resort.source;
+    } else {
+      for (const id of ['room', 'view', 'period']) fillSelect(el(id), [['', 'Select a resort']]);
+      el('chart-source').removeAttribute('href');
+    }
+    el('weekday').value = weekday ?? ''; el('weekend').value = weekend ?? '';
+    el('preset-status').textContent = pointsReady() ? `${resort ? 'Chart rates' : 'Manual points'}: ${weekday} Sun–Thu / ${weekend} Fri–Sat points per night.` : 'Select a resort or enter both manual point values.';
+    renderGrid();
+  }
+  function resortPointRows(selection) {
+    return '<tr class="section-heading"><th colspan="8">Night points by resort</th></tr>' + comparisons.map((comparison, index) => {
+      const row = document.createElement('tr'); row.className = 'points-row' + (index === activeComparison ? ' active-resort-row' : '');
+      row.dataset.comparison = comparison.id;
+      const heading = document.createElement('th'); heading.scope = 'row'; heading.className = 'measure-label resort-row-label';
+      const link = document.createElement('button'); link.type = 'button'; link.className = 'resort-result-link'; link.dataset.comparisonIndex = index;
+      link.textContent = `${comparison.id}. ${comparisonName(comparison)}`;
+      link.setAttribute('aria-label', `Show resort ${comparison.id}: ${comparisonName(comparison)} in main table`);
+      heading.append(link);
+      heading.title = [comparison.room, comparison.view].filter(Boolean).join(' · '); row.append(heading);
+      DAYS.forEach((_, start) => {
+        const cell = document.createElement('td'), total = comparisonTotal(comparison, start, selection.day);
+        const estimate = total !== null && estimatedStay(comparison, start, selection.day);
+        cell.textContent = total === null ? '—' : `${estimate ? '~' : ''}${total}`;
+        if (estimate) { cell.classList.add('estimated-total'); cell.title = estimateExplanation(); cell.setAttribute('aria-label', `Estimated total: ${total} points`); }
+        row.append(cell);
+      });
+      return row.outerHTML;
+    }).join('');
+  }
+  function firstDate() {
+    const input = el('earliest-checkin');
+    return input.value && input.validity.valid ? new Date(input.value + 'T00:00:00Z') : null;
+  }
+  function columnDate(column, offset = 0) {
+    const first = firstDate();
+    if (!first) return null;
+    first.setUTCDate(first.getUTCDate() + column + offset); return first;
+  }
+  function columnDay(column) { return columnDate(column)?.getUTCDay() ?? column; }
+  function shortDate(date) { return date ? date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }) : ''; }
+  function rateForDate(comparison, date) {
+    if (!date) return null;
+    const resort = window.DVC_POINTS?.resorts.find(resort => resort.id === comparison.resort);
+    const dow = date.getUTCDay();
+    if (!resort) return comparison.resort === '' && comparison.weekday !== null && comparison.weekend !== null ? (dow === 5 || dow === 6 ? comparison.weekend : comparison.weekday) : null;
+    let iso = date.toISOString().slice(0, 10);
+    if (date.getUTCFullYear() === 2028) {
+      // Use the prior chart's month/day, but the actual date's night type.
+      const monthDay = iso.slice(5) === '02-29' ? '02-28' : iso.slice(5);
+      iso = '2027-' + monthDay;
+    }
+    const period = resort.periods.find(period => period.ranges.some(range => iso >= range.start && iso <= range.end));
+    const index = resort.categories.findIndex(category => category.room === comparison.room && category.view === comparison.view);
+    return period && index >= 0 ? period.rates[index][dow === 5 || dow === 6 ? 'weekend' : 'weekday'] : null;
+  }
+  function estimatedNight(comparison, date) {
+    return !!date && date.getUTCFullYear() === 2028 && comparison.resort !== '' && comparison.resort !== 'select' && rateForDate(comparison, date) !== null;
+  }
+  function estimatedStay(comparison, column, checkout) {
+    for (let offset = 0; offset < checkout - 1; offset++) if (estimatedNight(comparison, columnDate(column, offset))) return true;
+    return false;
+  }
+  function estimateExplanation() {
+    return 'Estimate: 2028 nights use the matching month/day from the 2027 chart, with the actual night’s weekday/weekend rate. February 29 uses February 28.';
+  }
+  function comparisonTotal(comparison, column, checkout) {
+    if (!firstDate() || comparison.resort === 'select' || comparison.weekday === null || comparison.weekend === null) return null;
+    let total = 0;
+    for (let offset = 0; offset < checkout - 1; offset++) {
+      const rate = rateForDate(comparison, columnDate(column, offset));
+      if (rate === null) return null;
+      total += rate;
+    }
+    return total;
+  }
+  function columnHeaders(selection) {
+    const ranks = selection ? rankingData(selection)?.ranks : null;
+    return DAYS.map((_, column) => `<th scope="col">${ranks?.[column] ? `<span class="rank-badge floating-rank rank-${ranks[column].toLowerCase()}">${ranks[column]}</span>` : ''}${DAYS[columnDay(column)]}<small class="column-date">${shortDate(columnDate(column))}</small></th>`).join('');
+  }
+  function updateComparisonVisibility() {
+    const ready = !!firstDate() && comparisons.every(comparison => comparison.resort !== 'select' && comparison.weekday !== null && comparison.weekend !== null);
+    el('comparison-area').hidden = !ready;
+    el('comparison-placeholder').hidden = ready;
+    el('comparison-placeholder').textContent = !firstDate() ? 'Choose an earliest check-in date and complete your resort selections to see the comparison.' : 'Complete each resort selection (or both manual point values) to see the comparison.';
+    el('period').closest('label').hidden = !!firstDate() || !selectedResort();
+    el('date-rate-note').hidden = !firstDate();
+  }
   function highlightDays() {
     const checkoutDays = new Set(selections.map(selection => selection.day));
     const lastIncludedDay = Math.max(0, ...checkoutDays);
     for (const [offset, row] of Array.from(el('grid').tBodies[0].rows).entries()) {
       row.classList.toggle('outside-stay', offset + 1 > lastIncludedDay);
-      row.classList.toggle('rest-day', restInterval > 0 && offset > 0 && offset % restInterval === 0);
+      row.classList.toggle('rest-day', isRestDay(offset + 1, restInterval, el('travel-park').checked));
       row.classList.toggle('arrival-day', offset === 0);
       row.classList.toggle('checkout-day', checkoutDays.has(offset + 1));
       const labels = [];
       if (offset === 0) labels.push('Arrival');
-      if (restInterval > 0 && offset > 0 && offset % restInterval === 0) labels.push('Rest day, if before checkout');
+      if (isRestDay(offset + 1, restInterval, el('travel-park').checked)) labels.push('Rest day, if before checkout');
       if (checkoutDays.has(offset + 1)) labels.push('Checkout for line ' + selections.filter(selection => selection.day === offset + 1).map(selection => selection.id).join(', '));
       row.title = labels.join(' · ');
       Array.from(row.cells).slice(1).forEach((cell, start) => {
-        const day = (start + offset) % 7;
+        const day = (columnDay(start) + offset) % 7;
         const isRest = row.classList.contains('rest-day') && !row.classList.contains('checkout-day') && !row.classList.contains('arrival-day');
         cell.classList.toggle('saturday-rest', isRest && day === 6);
         cell.classList.toggle('sunday-rest', isRest && day === 0);
-        cell.title = isRest && day === 6 ? '★ Saturday rest day — if before checkout' : isRest && day === 0 ? '◆ Sunday rest day — if before checkout' : '';
+        cell.title = (isRest && day === 6 ? '★ Saturday rest day — if before checkout' : isRest && day === 0 ? '◆ Sunday rest day — if before checkout' : '') + (cell.classList.contains('estimated-night') ? ' · ' + columnDate(start, offset).toISOString().slice(0,10) + ' · ' + estimateExplanation() : '');
       });
     }
+  }
+  function visibleDayCount() {
+    return window.matchMedia('(max-width:700px)').matches ? Math.min(count, Math.max(8, requestedRows, ...selections.map(selection => selection.day + (requestedRows ? 0 : 3)))) : count;
+  }
+  function updateVisibleRows() {
+    const visible = visibleDayCount(), mobile = window.matchMedia('(max-width:700px)').matches;
+    Array.from(el('grid').tBodies[0].rows).forEach((row, index) => { row.hidden = index >= visible; });
+    el('extra-days-controls').hidden = !mobile;
+    el('more-days').hidden = visible === count;
+    el('trim-days').hidden = requestedRows === 0;
+    el('visible-days-status').textContent = `Showing ${visible} of ${count} days`;
+    positionLines();
   }
   function positionLines() {
     const rows = el('grid').tBodies[0].rows;
@@ -94,17 +264,26 @@ if (typeof document !== 'undefined') {
     line.setAttribute('aria-valuenow', selection.day);
     line.setAttribute('aria-valuetext', `Checkout day ${selection.day}, ${selection.day - 1} nights`);
     highlightDays();
-    positionLines();
+    updateVisibleRows();
   }
   function pointsReady() { return weekday !== null && weekend !== null; }
-  function rankingRows(selection) {
-    if (!el('rank').checked) return '';
-    if (!pointsReady()) return '<tr><td colspan="8" class="ranking-pending">Select chart rates or enter both point values to rank options.</td></tr>';
+  function rankingData(selection) {
+    if (!el('rank').checked) return null;
+    if (!pointsReady()) return { message: 'Select chart rates or enter both point values to rank options.' };
     const rules = { order: Array.from(el('rule-order').children, item => item.dataset.rule), saturday: el('rank-sat').checked, sunday: el('rank-sun').checked, departure: el('rank-departure').checked, preferred: Array.from(document.querySelectorAll('.preferred-day:checked'), input => Number(input.value)) };
-    const metrics = DAYS.map((_, start) => rankingMetrics(start, selection.day, weekday, weekend, restInterval));
-    const ranks = rankOptions(metrics, rules);
-    return `<tr class="section-heading"><th colspan="8">Comparison</th></tr><tr class="ranking-row"><th scope="row" class="measure-label">Rank</th>${ranks.map(rank => `<td>${rank ? `<span class="rank-badge rank-${rank.toLowerCase()}">${rank}</span>` : '—'}</td>`).join('')}</tr>` +
-      [['saturday', 'Sat park'], ['sunday', 'Sun park'], ['departure', 'Depart']].map(([key, label]) => `<tr class="ranking-detail"><th scope="row" class="measure-label">${label}</th>${metrics.map(metric => `<td>${key === 'departure' ? DAYS[metric[key]] : metric[key]}</td>`).join('')}</tr>`).join('');
+    const metrics = DAYS.map((_, start) => ({ ...rankingMetrics(columnDay(start), selection.day, weekday, weekend, restInterval, el('travel-park').checked), points: comparisonTotal(comparisons[activeComparison], start, selection.day) }));
+    if (metrics.some(metric => metric.points === null)) return { message: 'Ranking unavailable: some stay nights are outside the loaded 2027 chart.' };
+    return { metrics, ranks: rankOptions(metrics, rules) };
+  }
+  function sectionToggle(selection, section, label) {
+    return `<tr class="section-heading"><th colspan="8"><button type="button" class="result-section-toggle" data-section="${section}" aria-expanded="${!!selection[section + 'Open']}" aria-controls="${section}-${selection.id}"><span aria-hidden="true">${selection[section + 'Open'] ? '▾' : '▸'}</span> ${label}</button></th></tr>`;
+  }
+  function rankingRows(selection) {
+    const data = rankingData(selection);
+    if (!data) return '';
+    return sectionToggle(selection, 'comparison', 'Comparison details') + `</tbody><tbody id="comparison-${selection.id}" ${selection.comparisonOpen ? '' : 'hidden'}>` +
+      (data.message ? `<tr><td colspan="8" class="ranking-pending">${data.message}</td></tr>` :
+      [['saturday', 'Sat park'], ['sunday', 'Sun park'], ['departure', 'Depart']].map(([key, label]) => `<tr class="ranking-detail"><th scope="row" class="measure-label">${label}</th>${data.metrics.map(metric => `<td>${key === 'departure' ? DAYS[metric[key]] : metric[key]}</td>`).join('')}</tr>`).join(''));
   }
   function renderResults() {
     el('results').replaceChildren();
@@ -112,23 +291,35 @@ if (typeof document !== 'undefined') {
     for (const selection of selections) {
       const card = document.createElement('article');
       card.className = 'result'; card.style.setProperty('--color', selection.color);
-      card.innerHTML = `<div class="result-head"><strong>Checkout ${selection.id}</strong><span class="night-count">${selection.day - 1} nights</span><button class="remove" aria-label="Remove checkout ${selection.id}">×</button></div><label>Checkout day <input type="number" min="1" max="${count}" step="1" value="${selection.day}" aria-label="Checkout day for line ${selection.id}"></label><table class="totals"><caption class="sr-only">Total points by starting weekday for checkout ${selection.id}</caption><colgroup><col class="label-column">${DAYS.map(() => '<col>').join('')}</colgroup><thead><tr><th scope="col" class="start-label">Start day</th>${DAYS.map(day => `<th scope="col">${day}</th>`).join('')}</tr></thead><tbody><tr class="points-row"><th scope="row" class="measure-label">Points</th>${DAYS.map((_, start) => `<td>${pointsReady() ? nightTotal(start, selection.day, weekday, weekend) : '—'}</td>`).join('')}</tr><tr class="park-heading section-heading"><th colspan="8">Park days</th></tr>${[['total', 'Total'], ['weekdays', 'Weekday'], ['weekends', 'Weekend']].map(([key, label]) => `<tr class="park-counts"><th scope="row" class="measure-label">${label}</th>${DAYS.map((_, start) => `<td><b>${parkDays(start, selection.day, restInterval)[key]}</b></td>`).join('')}</tr>`).join('')}${rankingRows(selection)}</tbody></table>`;
+      card.innerHTML = `<div class="result-head"><strong>Checkout ${selection.id}</strong><span class="night-count">${selection.day - 1} nights</span><button class="remove" aria-label="Remove checkout ${selection.id}">×</button></div><label>Checkout day <input type="number" min="1" max="${count}" step="1" value="${selection.day}" aria-label="Checkout day for line ${selection.id}"></label><table class="totals"><caption class="sr-only">Total points by starting weekday for checkout ${selection.id}</caption><colgroup><col class="label-column">${DAYS.map(() => '<col>').join('')}</colgroup><thead><tr><th scope="col" class="start-label">Start day</th>${columnHeaders(selection)}</tr></thead><tbody>${resortPointRows(selection)}${sectionToggle(selection, 'park', 'Park days')}</tbody><tbody id="park-${selection.id}" ${selection.parkOpen ? '' : 'hidden'}>${[['total', 'Total'], ['weekdays', 'Weekday'], ['weekends', 'Weekend']].map(([key, label]) => `<tr class="park-counts"><th scope="row" class="measure-label">${label}</th>${DAYS.map((_, start) => `<td><b>${parkDays(columnDay(start), selection.day, restInterval, el('travel-park').checked)[key]}</b></td>`).join('')}</tr>`).join('')}</tbody><tbody>${rankingRows(selection)}</tbody></table>`;
       card.querySelector('input').addEventListener('change', event => {
         if (event.target.validity.valid) update(selection, Number(event.target.value));
       });
-      card.querySelector('button').addEventListener('click', () => {
+      card.querySelector('.remove').addEventListener('click', () => {
         selections.splice(selections.indexOf(selection), 1); renderLines(); renderResults();
       });
-      if (el('rank').checked) {
-        const badges = card.querySelectorAll('.ranking-row td');
-        badges.forEach((cell, index) => {
-          const badge = cell.querySelector('.rank-badge');
-          const kind = badge?.textContent.toLowerCase();
-          if (kind !== 'best' && kind !== 'worst') return;
-          for (const row of card.querySelectorAll('.totals tr')) {
-            if (row.cells.length === 8) row.cells[index + 1].classList.add(`column-${kind}`);
-          }
-        });
+      for (const toggle of card.querySelectorAll('.result-section-toggle')) toggle.addEventListener('click', () => {
+        const key = toggle.dataset.section + 'Open'; selection[key] = !selection[key];
+        const body = card.querySelector('#' + toggle.getAttribute('aria-controls')); body.hidden = !selection[key];
+        toggle.setAttribute('aria-expanded', String(selection[key]));
+        toggle.querySelector('span').textContent = selection[key] ? '▾' : '▸';
+      });
+      for (const link of card.querySelectorAll('.resort-result-link')) link.addEventListener('click', () => {
+        switchComparison(Number(link.dataset.comparisonIndex));
+        const replacement = el('results').querySelector(`[data-comparison="${comparisons[activeComparison].id}"] .resort-result-link`);
+        replacement?.focus({ preventScroll: true });
+      });
+      const ranks = rankingData(selection)?.ranks;
+      ranks?.forEach((rank, index) => {
+        if (rank !== 'Best' && rank !== 'Worst') return;
+        for (const row of card.querySelectorAll('.totals tr')) {
+          if (row.cells.length === 8 && (!row.classList.contains('points-row') || row.classList.contains('active-resort-row'))) row.cells[index + 1].classList.add(`column-${rank.toLowerCase()}`);
+        }
+      });
+      if (comparisons.some(comparison => DAYS.some((_, start) => estimatedStay(comparison, start, selection.day)))) {
+        const note = document.createElement('p'); note.className = 'estimate-note';
+        note.textContent = '~ Estimated totals include 2028 nights priced from the matching 2027 dates.' + (el('rank').checked ? ' Rankings may depend on these estimates.' : '');
+        note.title = estimateExplanation(); card.append(note);
       }
       el('results').append(card);
     }
@@ -149,54 +340,52 @@ if (typeof document !== 'undefined') {
         const values = { ArrowUp: selection.day - 1, ArrowDown: selection.day + 1, Home: 1, End: count };
         if (event.key in values) { event.preventDefault(); update(selection, values[event.key]); }
       });
-      let dragging = false;
-      line.addEventListener('pointerdown', event => { if (event.button !== 0) return; dragging = true; line.setPointerCapture(event.pointerId); line.focus(); event.preventDefault(); });
+      let dragging = false, dragLimit = count;
+      line.addEventListener('pointerdown', event => {
+        if (event.button !== 0) return;
+        dragging = true; dragLimit = visibleDayCount(); if (window.matchMedia('(max-width:700px)').matches) requestedRows = Math.max(requestedRows, dragLimit); line.setPointerCapture(event.pointerId);
+        line.focus({ preventScroll: true }); event.preventDefault();
+      });
       line.addEventListener('pointermove', event => {
         if (!dragging) return;
         const rows = el('grid').tBodies[0].rows;
         const top = rows[0].getBoundingClientRect().top;
-        const day = Math.max(1, Math.min(count, Math.round((event.clientY - top) / rows[0].getBoundingClientRect().height)));
+        const day = Math.max(1, Math.min(dragLimit, Math.round((event.clientY - top) / rows[0].getBoundingClientRect().height)));
         if (day !== selection.day) update(selection, day);
       });
       for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) line.addEventListener(type, () => { dragging = false; });
       el('lines').append(line);
     }
     highlightDays();
-    positionLines();
+    updateVisibleRows();
   }
   function updateControlSummaries() {
-    el('settings-summary').textContent = `${count} days · ${restInterval ? `rest every ${restInterval} days` : 'no rest days'}`;
+    el('settings-summary').textContent = `${restInterval ? `Every ${restInterval} days` : 'No rest days'} · travel ${el('travel-park').checked ? 'included' : 'excluded'}`;
     const resort = window.DVC_POINTS?.resorts.find(resort => resort.id === el('resort').value);
-    el('resort-summary').textContent = resort ? `${resort.name} · ${el('period').selectedOptions[0]?.textContent || ''}` : el('resort').value === 'select' ? 'Select Resort' : `Manual · ${weekday ?? '—'} / ${weekend ?? '—'} pts`;
+    el('resort-summary').textContent = resort ? `${resort.name} · ${firstDate() ? `from ${shortDate(firstDate())}` : el('period').selectedOptions[0]?.textContent || ''}` : el('resort').value === 'select' ? 'Select Resort' : `Manual · ${weekday ?? '—'} / ${weekend ?? '—'} pts`;
   }
   function renderGrid() {
-    updateControlSummaries();
-    el('grid').tHead.innerHTML = `<tr><th scope="col">Day</th>${DAYS.map(day => `<th scope="col">${day}</th>`).join('')}</tr>`;
+    saveComparison(); renderComparisonTabs();
+    updateControlSummaries(); updateComparisonVisibility();
+    el('grid').tHead.innerHTML = `<tr><th scope="col">Day</th>${columnHeaders()}</tr>`;
     el('grid').tBodies[0].innerHTML = Array.from({length: count}, (_, offset) => `<tr><td>${offset + 1}</td>${DAYS.map((_, start) => {
-      const day = (start + offset) % 7;
+      const day = (columnDay(start) + offset) % 7;
       const isWeekendNight = day === 5 || day === 6;
       const isWeekendDay = day === 6 || day === 0;
-      return `<td class="${isWeekendDay ? 'weekend' : ''}"><span>${DAYS[day]}</span><b>${pointsReady() ? (isWeekendNight ? weekend : weekday) : '—'}</b></td>`;
+      const date = columnDate(start, offset), rate = rateForDate(comparisons[activeComparison], date);
+      const estimate = estimatedNight(comparisons[activeComparison], date);
+      return `<td class="${isWeekendDay ? 'weekend' : ''}${estimate ? ' estimated-night' : ''}"><span>${DAYS[day]}</span><b${estimate ? ` aria-label="Estimated ${rate} points for ${date.toISOString().slice(0,10)}"` : ''}>${rate === null ? '—' : `${estimate ? '~' : ''}${rate}`}</b></td>`;
     }).join('')}</tr>`).join('');
     renderLines(); renderResults();
   }
-  for (const id of ['weekday', 'weekend', 'days']) el(id).addEventListener('input', event => {
-    if (id === 'weekday' || id === 'weekend') {
-      const valid = event.target.value !== '' && event.target.validity.valid && Number.isSafeInteger(Number(event.target.value));
-      if (id === 'weekday') weekday = valid ? Number(event.target.value) : null;
-      else weekend = valid ? Number(event.target.value) : null;
-      el('preset-status').textContent = pointsReady() ? 'Using manual points.' : 'Enter both weekday and weekend points.';
-      renderGrid(); return;
-    }
-    if (!event.target.validity.valid || event.target.value === '') return;
-    const value = Number(event.target.value);
-    if (!Number.isSafeInteger(value)) return;
-    if (id === 'weekday' || id === 'weekend') el('preset-status').textContent = 'Using manual points.';
-    if (id === 'weekday') weekday = value;
-    else if (id === 'weekend') weekend = value;
-    else { count = value; selections.forEach(selection => { selection.day = Math.min(selection.day, count); }); }
+  for (const id of ['weekday', 'weekend']) el(id).addEventListener('input', event => {
+    const valid = event.target.value !== '' && event.target.validity.valid && Number.isSafeInteger(Number(event.target.value));
+    if (id === 'weekday') weekday = valid ? Number(event.target.value) : null;
+    else weekend = valid ? Number(event.target.value) : null;
+    el('preset-status').textContent = pointsReady() ? 'Using manual points.' : 'Enter both weekday and weekend points.';
     renderGrid();
   });
+  el('travel-park').addEventListener('change', () => { updateControlSummaries(); highlightDays(); renderResults(); });
   el('rest').addEventListener('change', event => {
     restInterval = Number(event.target.value);
     updateControlSummaries(); highlightDays(); renderResults();
@@ -276,7 +465,9 @@ if (typeof document !== 'undefined') {
   function applyPreset() {
     const resort = selectedResort();
     if (!resort) return;
-    const period = resort.periods.find(period => period.id === el('period').value);
+    const date = firstDate()?.toISOString().slice(0, 10);
+    const period = date ? resort.periods.find(period => period.ranges.some(range => date >= range.start && date <= range.end)) : resort.periods.find(period => period.id === el('period').value);
+    if (period) el('period').value = period.id;
     const index = resort.categories.findIndex(category => category.room === el('room').value && category.view === el('view').value);
     if (!period || index < 0) return;
     weekday = period.rates[index].weekday; weekend = period.rates[index].weekend;
@@ -298,6 +489,7 @@ if (typeof document !== 'undefined') {
   }
   el('resort').addEventListener('change', () => {
     const resort = selectedResort();
+    weekday = null; weekend = null; el('weekday').value = ''; el('weekend').value = '';
     for (const id of ['room', 'view', 'period']) el(id).disabled = !resort;
     el('chart-source').hidden = !resort;
     el('manual-points').hidden = el('resort').value !== '';
@@ -307,7 +499,7 @@ if (typeof document !== 'undefined') {
       for (const id of ['room', 'view', 'period']) fillSelect(el(id), [['', 'Select a resort']]);
       el('chart-source').removeAttribute('href');
       el('preset-status').textContent = el('resort').value === 'select' ? 'Select a resort or choose Manual Points Entry.' : pointsReady() ? `Using manual points: ${weekday} weekday / ${weekend} weekend.` : 'Enter both weekday and weekend points.';
-      updateControlSummaries();
+      renderGrid();
       return;
     }
     const previousRoom = el('room').value;
@@ -320,11 +512,16 @@ if (typeof document !== 'undefined') {
   });
   el('room').addEventListener('change', () => { fillViews(); applyPreset(); });
   for (const id of ['view', 'period']) el(id).addEventListener('change', applyPreset);
-  window.addEventListener('resize', positionLines);
+  el('earliest-checkin').addEventListener('input', () => {
+    if (selectedResort() && firstDate()) applyPreset();
+    else renderGrid();
+  });
+  el('more-days').addEventListener('click', () => { requestedRows = Math.min(count, visibleDayCount() + 7); updateVisibleRows(); });
+  el('trim-days').addEventListener('click', () => { requestedRows = 0; updateVisibleRows(); });
+  window.addEventListener('resize', updateVisibleRows);
   const mobilePanels = window.matchMedia('(max-width:700px)');
   function syncDisclosures() {
     el('resort-disclosure').open = true;
-    el('settings-disclosure').open = !mobilePanels.matches;
     positionLines();
   }
   mobilePanels.addEventListener('change', syncDisclosures);
